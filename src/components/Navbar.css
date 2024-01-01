@@ -1,7 +1,11 @@
+html, body { /*KEEP*/
+  margin: 0;
+  background: #abaca4;
+}
 
-.navbar {
+.navbar { /*KEEP*/
     align-items: center;
-    background: linear-gradient(180deg, rgb(44, 42, 42) 0%, rgb(54, 53, 53) 100%);
+    background: #464646;
     display: flex;
     /* justify-content: center; */
     height: 70px;
@@ -9,7 +13,7 @@
     /* z-index: 999; */
   }
 
-  .navbar-box {
+  .navbar-box { /*KEEP*/
     align-items: center;
     display: flex;
     height: 70px;
@@ -17,7 +21,7 @@
     /* max-width: 1500px; */
   }
 
-  .navbar-initials {
+  .navbar-initials { /*KEEP*/
     align-items: center;
     color: #fff;
     cursor: pointer;
@@ -31,49 +35,46 @@
     width: 20vw;
   }
 
-  .nav-menu {
+  .nav-menu { /*KEEP*/
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 0px;
     grid-template-columns: repeat(4, auto);
     justify-content: end;
     list-style: none;
     margin-right: 2rem;
     /* text-align: center; */
     width: 60vw; /* may need to change later */
+    align-self: stretch;
   }
   
   .nav-menu-item {
-    height: 70px;
-    /* width: 150px; */
-
     
+    /* width: 150px;
+    height: auto;
+    margin: 0;
+    background: none;
+    border: 50px solid #FFF; */
+    background: #abaca4;
+    clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
+    height: 54px; 
+    -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
+    width: 180px;
   }
   
   .nav-menu-link 
   {
-    text-align: center;
     align-items: center;
     color: #fff;
     display: flex;
     font-family: Courier;
     font-size: 1.4rem;
     font-weight: bold;
-    height: 77%;
-    justify-self: end;
-    padding: 0.5rem; 
-
+    justify-content: center;
     text-decoration: none;
-    width: 150px;
   }
   
   .nav-menu-link:hover { 
-    /* position: absolute; */
-    /* height: 100%;
-    top: 0;
-    z-index: 0; */
-    background: #5962b1;
-    /* width: 100px; */
-    /* border-bottom: 4px solid #774141; */
+    background: #838383;
     transition: all 0.2s ease-out;
   }
   
@@ -84,16 +85,11 @@
     font-family: Courier;
     font-size: 1.4rem;
     font-weight: bold;
-    height: 75%;
-    justify-self: end;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+    justify-content: center;
   }
 
   .nav-menu-about:hover {
-    background: #b8b373;
-    /* width: 100px; */
-    /* border-bottom: 4px solid #774141; */
+    background: #838383;
     transition: all 0.2s ease-out;
   }
 
@@ -106,4 +102,9 @@
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
+  }
+
+  .nav-menu-link link.onClick
+  {
+
   }
