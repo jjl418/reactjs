@@ -3,6 +3,7 @@ html, body { /*KEEP*/
   background: #abaca4;
 }
 
+
 .navbar { /*KEEP*/
     align-items: center;
     background: #464646;
@@ -94,17 +95,102 @@ html, body { /*KEEP*/
   }
 
   .menu-icon {
-    color: #fff;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
+    display: none;
   }
 
-  .nav-menu-link link.onClick
+  /* .item-inactive
   {
+    background: #a88d15;
+    clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
+    height: 54px; 
+    -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
+    width: 180px;
+  } */
 
+  /* CSS for readjusting UI for mobile device */
+  @media screen and (max-width: 1000px) { /*used to be 960px*/
+    .NavbarItems {
+      position: relative;
+    }
+  
+    .nav-menu {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.open {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+
+    .nav-menu-item {
+      height: 80px;
+      background: none;
+      clip-path: none;
+      -webkit-clip-path: none;
+      width: none;
+    }
+
+    .nav-menu-link {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-menu-link:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+  
+    .navbar-initials {
+      align-items: center;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      font-family: Courier;
+      font-size: 2rem;
+      font-weight: bold;
+      justify-self: start;
+      margin-left: 20px;
+      text-decoration: none;
+      width: 20vw;
+    }
+  
+    .menu-icon {
+      color: #fff;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .nav-menu-about {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .nav-menu-about:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
   }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css';
 import {Link} from 'react-router-dom'
+import {Button} from './Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import "@fontsource/special-elite";
@@ -11,6 +12,27 @@ function Navbar() {
   // mobile menu denoted as "MMenu"
   const MMenuClose = () => setClicked(false);
 
+  // const [active, setActive] = useState(false);
+  // const tabActive = () => setActive(!active);
+
+  // function someFunc() {
+  //   MMenuClose(); 
+  //   tabActive();
+  // }
+
+  // const [button, setButton] = useState(true);
+  //Function that handles UI changes on Mobile devices
+  // const showUI = () => {
+  //   if(window.innerWidth <= 960){
+  //     setButton(false);
+  //   }
+  //   else{
+  //     setButton(true);
+  //   }
+  // };
+
+  // window.addEventListener('resize', showUI);
+
   return (
     <>
         <nav className ="navbar">
@@ -19,7 +41,7 @@ function Navbar() {
                   J Lee
                 </Link>
                 <div className = "menu-icon" onClick = {isClicked}>
-                  {clicked ? <MenuIcon/> : <CloseIcon/>}
+                  {clicked ? <CloseIcon/> : <MenuIcon/>}
                 </div>
 
                 {/* to track menu state on mobile version  */}
@@ -49,12 +71,12 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
+                {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
+                {/* <Button buttonStyle='btn--outline'>SIGN UP</Button> */}
             </div>
         </nav>
-
-        
     </>
-  )
+  );
 }
 
 export default Navbar
