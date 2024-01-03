@@ -38,7 +38,7 @@ function Navbar() {
         <nav className ="navbar">
             <div className = "navbar-box">
                 <Link to= "/" className = "navbar-initials">
-                  J Lee
+                  J.Lee
                 </Link>
                 <div className = "menu-icon" onClick = {isClicked}>
                   {clicked ? <CloseIcon/> : <MenuIcon/>}

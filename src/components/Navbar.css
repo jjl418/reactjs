@@ -20,6 +20,7 @@ html, body { /*KEEP*/
     height: 70px;
     justify-content: center;
     /* max-width: 1500px; */
+    
   }
 
   .navbar-initials { /*KEEP*/
@@ -46,6 +47,7 @@ html, body { /*KEEP*/
     /* text-align: center; */
     width: 60vw; /* may need to change later */
     align-self: stretch;
+    
   }
   
   .nav-menu-item {
@@ -60,6 +62,7 @@ html, body { /*KEEP*/
     height: 54px; 
     -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
     width: 180px;
+    
   }
   
   .nav-menu-link 
@@ -108,10 +111,10 @@ html, body { /*KEEP*/
   } */
 
   /* CSS for readjusting UI for mobile device */
-  @media screen and (max-width: 1000px) { /*used to be 960px*/
-     .navbar {
+  @media screen and (max-width: 1080px) { /*used to be 960px*/
+     /* .navbar {
       position: relative;
-    } 
+    }  */
   
     .nav-menu {
       align-items: center;
@@ -126,13 +129,11 @@ html, body { /*KEEP*/
       opacity: 1;
       transition: all 0.5s ease;
       margin: none;
-      background-color: #fcff4b;
-      
     }
   
     .nav-menu.open {
       margin: none;
-      background: #242222;
+      background: #707070;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
@@ -147,37 +148,21 @@ html, body { /*KEEP*/
       display: flex; 
       height: 80px;
       background: none;
-      background-color: #64cf56;
       clip-path: none;
       -webkit-clip-path: none;
       width: 100%;
       margin: none;
       padding: none;
-      /* background: #abaca4;
-      clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
-      height: 54px; 
-      -webkit-clip-path: polygon(100% 0, 90% 0, 100% 100%, 0 100%, 0.5% 0);
-      width: 180px; */
     }
 
     .nav-menu-link {
-      text-align: center;
+      /* text-align: center; */
       width: 100%;
       display: table;
       margin: none;
       align-items: center;
       justify-self: center;
-
-      
-      background-color: #cf5656;
-      /* align-items: center;
-      color: #fff;
-      display: flex;
-      font-family: Courier;
-      font-size: 1.4rem;
-      font-weight: bold;
-      justify-content: center;
-      text-decoration: none; */
+      /* background-color: #9e3434; */
     }
   
     .nav-menu-link:hover {

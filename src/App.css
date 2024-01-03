@@ -1,20 +1,6 @@
-.App {
-  text-align: center;
+* {
+  /* box-sizing: border-box;
+  margin: 0; */
+  padding: 0;
+  /* margin: 0; */
 }
-
-.App-header {
-  background-color: #adadad;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
