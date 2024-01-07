@@ -2,8 +2,9 @@ import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-
-
+// import Home from '../components/pages/home-page/Home'
+// import Home from './components/pages/home-page/Home';
+import Home from './components/pages/home/Home';
 function App() {
   return (
       // <header className="App-header">
@@ -15,7 +16,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path ='/' exact />
+          {/* <Route path ='/' exact component={Home}/> */}
+          <Route path='/' element={<Home/>} />
+          
         </Routes>
       </Router>
   );
