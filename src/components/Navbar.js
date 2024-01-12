@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 // import {Button} from './Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import "98.css";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
