@@ -25,9 +25,11 @@ html, body { /*KEEP*/
 
   .navbar-box { /*KEEP*/
     align-items: center;
+    /* background-color: #e20d0d; */
+    /* width: 100%; */
     display: flex;
     height: 40px;
-    justify-content: center;
+    /* justify-content: center; */
     /* max-width: 1500px; */
     /* background-color: #e73a3a; */
     /* background-color: #5dce3b;  */
@@ -251,13 +253,14 @@ html, body { /*KEEP*/
   
     .menu-icon {
       color: #fff;
-      height: 40px;
-      background-color: aquamarine;
+      /* font-weight: bolder; */
+      height: 30px;
+      /* background-color: aquamarine; */
       display: block;
       position: absolute;
       top: 0;
       right: 0;
-      transform: translate(-100%, 60%);
+      transform: translate(-100%, 20%);
       font-size: 1.8rem;
       cursor: pointer;
     }

@@ -19,7 +19,7 @@
     /* text-align: center; */
     color:rgb(255, 255, 255);
     font-size: 3rem;
-    background-color: rgb(197, 110, 75);
+    background-color:  rgba(247, 129, 222, 0.64);
     overflow-wrap: break-word;
     /* vertical-align: middle; */
     /* background-color: rgb(190, 92, 92); */
@@ -41,7 +41,7 @@
         /* text-align: center; */
         color:rgb(255, 255, 255);
         font-size: 1.5rem;
-        background-color: rgb(197, 110, 75);
+        background-color:  rgba(247, 129, 222, 0.64);
         /* vertical-align: middle; */
         /* background-color: rgb(190, 92, 92); */
         /* height: 70px; */
@@ -50,7 +50,7 @@
         height: 50vh;
         justify-content: start;
         overflow-wrap: break-word;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1.3px;
         -webkit-text-stroke-color:#0c0c0c;
 
     }
