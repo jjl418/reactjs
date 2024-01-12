@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 // import {Button} from './Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import "@fontsource/special-elite";
+import "98.css";
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -35,7 +35,8 @@ function Navbar() {
 
   return (
     <>
-        <nav className ="navbar">
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
+        <nav className ="navbar"> 
             <div className = "navbar-box">
                 <Link to= "/" className = "navbar-initials">
                   J.Lee

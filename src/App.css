@@ -4,3 +4,15 @@
   margin: 0;
   
 }
+
+@font-face {
+  font-family: "MSSansSerif";   /*Can be any text*/
+  src: local("MS_Sans_Serif"),
+    url("./fonts/MS_Sans_Serif.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MSSansSerifBold";   /*Can be any text*/
+  src: local("MS_Sans_Serif_Bold"),
+    url("./fonts/MS_Sans_Serif_Bold.ttf") format("truetype");
+}

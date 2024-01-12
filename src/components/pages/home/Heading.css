@@ -5,7 +5,8 @@
     width: 100%;
     display: flex;
     /* align-items: center; */
-    background-color: rgb(75, 197, 115);
+    background-color: rgb(255, 150, 232);
+    /* max-height: 100vh; */
     /* vertical-align: middle; */
 }
 

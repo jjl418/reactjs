@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 // import Home from '../components/pages/home-page/Home'
 // import Home from './components/pages/home-page/Home';
 import Home from './components/pages/home/Home';
+import './fonts/MS_Sans_Serif_Bold.ttf';
 function App() {
   return (
       // <header className="App-header">
