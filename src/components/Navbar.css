@@ -20,6 +20,7 @@ html, body { /*KEEP*/
     border-top: #0fbec1;
     border-right: #0fbec1;
     border-left:#0fbec1;
+    background-image: linear-gradient(to right, #0fbec1 , rgb(109, 164, 223));
   }
 
   .navbar-box { /*KEEP*/
@@ -59,7 +60,7 @@ html, body { /*KEEP*/
     /* text-align: center; */
     width: 60vw; /* may need to change later */
     align-self: end;
-    border-color: #0fbec1;
+    border-color: #0fbec100;
     border-style: solid;
     border-width: 2.5px;
     background-color: none;
@@ -125,6 +126,8 @@ html, body { /*KEEP*/
   
   .nav-menu-link:hover { 
     background: #f4a5d9;
+    /* border: solid;
+    border-bottom: #f4a5d9; */
     transition: all 0.2s ease-out;
   }
   
