@@ -5,7 +5,7 @@ import Heading from './Heading';
 function Home() {
   return (
     <>
-      <Heading />;
+      <Heading />
     </>
   );
 }

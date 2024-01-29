@@ -1,7 +1,7 @@
-.message-box
+.home-background
 {
     /* justify-content: center; */
-    height: 100vh;
+    /* height: 93vh; */
     width: 100%;
     display: flex;
     /* align-items: center; */
@@ -9,8 +9,14 @@
     background:
     conic-gradient(from 90deg at 3px 3px,#0000 90deg,rgb(254, 183, 238) 0) 
     0 0/100px 100px;
-    /* max-height: 100vh; */
-    /* vertical-align: middle; */
+    /* background: #ff0000; */
+    position: absolute;
+    top: 42px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 0;
+    
 }
 
 .message

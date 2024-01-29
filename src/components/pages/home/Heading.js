@@ -12,7 +12,7 @@ function Heading() {
 
     return (
       <>
-        <div className= "message-box">
+        <div className= "home-background">
             <div className= "message">
                 <h1>
                     <span style = {{fontWeight: 'bold', color: 'white'}}>
