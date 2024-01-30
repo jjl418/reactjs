@@ -22,14 +22,10 @@
 .message
 {
     font-family: "MSSansSerifBold";
-    /* text-align: center; */
     color:rgb(255, 255, 255);
     font-size: 3rem;
     background-color:  rgba(247, 129, 222, 0.64);
     overflow-wrap: break-word;
-    /* vertical-align: middle; */
-    /* background-color: rgb(190, 92, 92); */
-    /* height: 70px; */
     width: 30%;
     margin-left: 4%;
     margin-top: 4%;
@@ -44,13 +40,9 @@
     .message
     {
         font-family: "MSSansSerifBold";
-        /* text-align: center; */
         color:rgb(255, 255, 255);
         font-size: 1.5rem;
         background-color:  rgba(247, 129, 222, 0.64);
-        /* vertical-align: middle; */
-        /* background-color: rgb(190, 92, 92); */
-        /* height: 70px; */
         width: 40%;
         margin-left: 4%;
         height: 50vh;
