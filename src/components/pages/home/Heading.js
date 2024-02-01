@@ -1,7 +1,11 @@
-import React from "react";
+import React, { Suspense } from "react";
 import '../../../App';
 import './Heading.css';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Temphead from '../../../model/Temphead';
 
 function Heading() {
     const [text] = useTypewriter({
@@ -24,8 +28,20 @@ function Heading() {
                 </h1>
             </div>
         </div>
-
-        
+        {/* <div className = "model-box">
+            <ambientLight/>
+            <OrbitControls/>
+            <Suspense fallback = {null}>
+                <Temphead/>
+            </Suspense>
+        </div> */}
+        <Canvas>
+                <ambientLight/>
+                <OrbitControls/>
+                <Suspense fallback = {null}>
+                    <Temphead position={[0, 0, 4]} />
+                </Suspense>
+        </Canvas>
       </>
     );
   }
