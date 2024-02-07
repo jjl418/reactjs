@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+// import React, { Suspense } from "react";
 import '../../../App';
 import './Heading.css';
 import { useTypewriter, Cursor } from "react-simple-typewriter";
@@ -6,6 +6,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import Temphead from '../../../model/Temphead';
+import React, { Suspense } from 'react';
 
 function Heading() {
     const [text] = useTypewriter({
@@ -14,6 +15,16 @@ function Heading() {
         typeSpeed: 100
     });
 
+    // const canvasRef = useRef(null);
+    // useEffect(() => {
+    // const Canvas = canvasRef.current;
+    // const context = Canvas.getContext('2d');
+    // Canvas.width = 250;
+    // Canvas.height = 400;
+    // context.fillRect(0, 0, Canvas.width, Canvas.height);
+    //     }, []);
+    
+    
     return (
       <>
         <div className= "home-background">
@@ -35,12 +46,21 @@ function Heading() {
                 <Temphead/>
             </Suspense>
         </div> */}
-        <Canvas>
-                <ambientLight/>
-                <OrbitControls/>
-                <Suspense fallback = {null}>
-                    <Temphead position={[0, 0, 4]} />
-                </Suspense>
+        {/* <Canvas>
+            <ambientLight/>
+            <OrbitControls/>
+            <Suspense fallback = {null}>
+                <Temphead/>
+            </Suspense>
+        </Canvas> */}
+        <Canvas camera={{ position: [0, 0, 4] }}>
+            <ambientLight intensity={0.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <Suspense fallback = {null}>
+                <Temphead position={[5, 0, 0]} scale={[5, 5, 5]}/> {/* Adjust the position to place the model on the right side */}
+      
+            </Suspense>
+            <OrbitControls enableZoom = {false}/>
         </Canvas>
       </>
     );
