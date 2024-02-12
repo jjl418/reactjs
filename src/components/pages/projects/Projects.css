@@ -1,0 +1,81 @@
+.img-container
+{
+    /* position:absolute; */
+    width: 560px;
+    height: 40px;
+    background-image: linear-gradient(to right, #adcbf3 , #7f98fb);
+    margin-top: 30px;
+    margin-left: 30px;
+    display: flex;
+    
+    border-top: #91befa;
+    border-left: #d5e6fb;
+    border-right: hsl(228, 60%, 64%);
+    border-style: solid;
+    
+    border-radius:  5px 5px 0 0;
+    
+    box-shadow: -1.5px -1.5px #000000, 2px -2px #000000, -2px 0px #000000,
+    2px 0px #000000, 0 -2px #000000;
+}
+
+.caption-container
+{
+    display: flex;
+    position: absolute;
+    height: 34px;
+    width: 120px;
+    justify-self: start;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-caption
+{
+    font-family: "MSSansSerifBold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color:#86868630;
+}
+
+.img-layout
+{
+    /* display: absolute; */
+    /* position:absolute; */
+    align-self: end;
+    justify-content: flex-start;
+
+    /* width: 560px; */
+    width: 560px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-top: rgb(231, 231, 231);
+    border-right: rgb(206, 206, 206);
+    border-left: rgb(214, 214, 214);
+    border-bottom: rgb(195, 195, 195);
+    border-style: solid;
+    margin-left: 30px;
+    border-radius: 2;
+    box-shadow: 2px 2px #000000, -2px 2px #000000, -2px 0px #000000,
+    2px 0px #000000, 0 2px #000000, -2px -2px #000000, 2px -2px #000000;
+
+}
+
+.img-border
+{
+    width: 270px;
+    height: 480px;
+    padding: 9px;
+
+}
+
+.project1
+{
+    width: 270px;
+    height: 480px;
+    border: solid 2.2px;
+    
+}

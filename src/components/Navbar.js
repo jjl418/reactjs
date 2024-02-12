@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 // import {Button} from './Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import pixelheart2 from '../images/decor/pixelheart.png';
 
 function Navbar() {
   const [clicked, setClicked] = useState(false);
@@ -40,6 +41,10 @@ function Navbar() {
                 <Link to= "/" className = "navbar-initials">
                   J.Lee
                 </Link>
+                {/* <div className = "navbar-logo">
+                  <img src = {pixelheart2} className = "logo" alt= ""/>
+                </div> */}
+                <img src = {pixelheart2} className = "logo" alt= ""/>
                 <div className = "menu-icon" onClick = {isClicked}>
                   {clicked ? <CloseIcon/> : <MenuIcon/>}
                 </div>
