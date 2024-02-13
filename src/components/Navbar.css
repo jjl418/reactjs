@@ -13,14 +13,13 @@ html, body { /*KEEP*/
     position: sticky; /*may need to delete*/
     padding:0;
     margin:0;
-    /* border-style: solid; */
     border: solid 2.3px;
     border-top: #0fbec1;
     border-right: #0fbec1;
     border-left:#0fbec1;
     /* background-image: linear-gradient(to right, #82eef0 , rgb(89, 166, 249)); */
     /* background-image: linear-gradient(to right, #889cff , #827fe6); */
-    background-image: linear-gradient(to right, #a3a8c0 , #837eff);
+    background-image: linear-gradient(to right, #939ed8 , #837eff);
   }
 
   .navbar-box { /*KEEP*/
@@ -42,12 +41,7 @@ html, body { /*KEEP*/
     justify-self: start;
     margin-left: 20px;
     text-decoration: none;
-    /* margin-right: 200px; */
-    /* width: 100px; */
-    /* background-color: #0fbec1; */
-    /* margin-right: 0%; */
     width: 90px;
-    /* width: 10%; */
   }
 
   .logo
