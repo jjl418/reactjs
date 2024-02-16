@@ -1,8 +1,7 @@
-// import React, { Suspense } from "react";
 import '../../../App';
 import './Projects.css';
-import creamistry_menu from '../../../images/projects_images/creamistry_menu.png';
-import cat from '../../../images/projects_images/cat.png';
+// import creamistry_menu from '../../../images/projects_images/creamistry_menu.png';
+// import cat from '../../../images/projects_images/cat.png';
 import mint_icecream from '../../../images/projects_images/mint_icecream.png';
 import chocolate_icecream from '../../../images/projects_images/chocolate_icecream.png';
 import strawberry_icecream from '../../../images/projects_images/strawberry_icecream.png';
@@ -13,27 +12,41 @@ import dog_unknown from '../../../images/projects_images/dog_unknown.png';
 import rat_unknown from '../../../images/projects_images/rat_unknown.png';
 import p1_video from '../../../videos/p1_demo_video.mp4';
 import rabbit from '../../../images/projects_images/rabbit2.png';
-// import 
-// import "98.css";
+import React, { useState } from 'react';
 
-var img_list = document.querySelector('.p1-image');
-var images = ['creamistry_menu.png','creamistry_gameplay1.png', 'creamistry_gameplay2.png'];
-var i = 0; //img index
 
-const next = () =>
-{
-    if(i >= images.length - 1) i = -1;
-    i++;
-    return changeImage();
-    
-}
-
-const changeImage = () =>
-{
-  img_list.setAtrribute('src', '../../../images/projects_images/' + images[i]);
-}
 
 function Projects() {
+
+  const [currentIndex, setCurrentIndex] = useState(0); //index for p1_images list
+  const p1_images = [
+    require('../../../images/projects_images/creamistry_menu.png'),
+    require('../../../images/projects_images/creamistry_gameplay1.png'),
+    require('../../../images/projects_images/creamistry_gameplay2.png'),
+    require('../../../images/projects_images/next_level.png'),
+    require('../../../images/projects_images/win.png'),
+    require('../../../images/projects_images/lose.png'),
+    require('../../../images/projects_images/tutorial1.png'),
+    require('../../../images/projects_images/tutorial2.png'),
+    require('../../../images/projects_images/tutorial3.png'),
+    // Add more image URLs as needed
+  ];
+  const nextP1Image = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === p1_images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const [currentIndex2, setCurrentIndex2] = useState(0); //index for changing p1 character profiles
+  const profile_images = [
+    require('../../../images/projects_images/cat.png'),
+    require('../../../images/projects_images/dog.png'),
+    require('../../../images/projects_images/rat.png'),
+    // Add more image URLs as needed
+  ];
+  const changeProfile = (index) => {
+    setCurrentIndex2(index);
+  };
+
+
     return (
       <>
       <div className= 'projects-background'>
@@ -62,7 +75,7 @@ function Projects() {
               </h1>
             </div>
             
-            <video src={p1_video} className = "p1-demo-video-box" width="200" height="350" controls="controls" autoplay="false" />
+            <video src={p1_video} className = "p1-demo-video-box" width="200" height="350" controls="controls" autoplay= {false} />
           </div>
 
           <div className = "p1-credits-container">
@@ -103,23 +116,24 @@ function Projects() {
           </div>
         </div>
         <div className = "tab-layout">
-          {/* <script src = "../projects/P1ImageHandle.js"></script> */}
-          <button className = 'next-button' onClick= {next}>
+          <button className = 'next-button' onClick= {nextP1Image}>
             <img src = {next_icon} className = "next-icon" alt = ""/>
           </button>
 
-          {/* <script src = "../projects/P1ImageHandle.js"></script> */}
 
           <div className = "p1-container">
-            <img src = {creamistry_menu} className = "p1-image" alt= ""/>
+            {/* <img src = {creamistry_menu} className = "p1-image" alt= ""/> */}
+            <img src = {p1_images[currentIndex]} className = "p1-image" alt = ""/>
           </div>
           <div className = "id-card">
-            <img src = {cat} className = "profile" alt = ""/>
+            {/* <img src = {cat} className = "profile" alt = ""/> */}
+
+            <img src = {profile_images[currentIndex2]} className = "profile" alt = ""/>
+
             <h1 className = "profile-name">
               Mr. Cat
             </h1>
             <h1 className = "profile-content">
-              {/* role: customer */}
               role: customer
               gender: male
               appears: all levels
@@ -139,13 +153,13 @@ function Projects() {
               Characters:
             </h1>
             <div className = "characters-container">
-              <button className = "cat-button">
+              <button className = "cat-button" onClick = {() => changeProfile(0)}>
                 <img src = {cat_unknown} className = "cat-unknown" alt = ""/>
               </button>
-              <button className = "dog-button">
+              <button className = "dog-button" onClick = {() => changeProfile(1)}>
                 <img src = {dog_unknown} className = "dog-unknown" alt = ""/>
               </button>
-              <button className = "rat-button">
+              <button className = "rat-button" onClick = {() => changeProfile(2)}>
                 <img src = {rat_unknown} className = "rat-unknown" alt = ""/>
               </button>
               <div className = "character-divider"/>
