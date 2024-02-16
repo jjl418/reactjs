@@ -6,6 +6,13 @@ html, body { /*KEEP*/
 }
 
 .navbar { /*KEEP*/
+   /*DELETEEEEEEEEEEEEEE*/
+	background: #fff;
+	filter: contrast(1);
+	--mask: linear-gradient(red, #{rgba(#000, .30)});
+  /*DELETEEEEEEEEEEEEEE*/
+
+
     align-items: center;
     background: #0fbec1;
     display: flex;
@@ -19,7 +26,19 @@ html, body { /*KEEP*/
     border-left:#0fbec1;
     /* background-image: linear-gradient(to right, #82eef0 , rgb(89, 166, 249)); */
     /* background-image: linear-gradient(to right, #889cff , #827fe6); */
-    background-image: linear-gradient(to right, #939ed8 , #837eff);
+    background-image: linear-gradient(to right, #939ed8 , #6561e9);
+
+    /*DELETEEEEEE*/
+    &::before {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: 
+        radial-gradient(#97a8fd, transparent) 0 0/ 0.3em 0.3em space;
+      -webkit-mask: var(--mask);
+          mask: var(--mask);
+      content: '';
+    }
+      /*DELETEEEEEE*/
   }
 
   .navbar-box { /*KEEP*/
@@ -91,7 +110,7 @@ html, body { /*KEEP*/
     justify-content: center;
     text-decoration: none;
     border-radius: 5px 5px 0 0;
-    height: 30px; 
+    height: 32px; 
     align-self: end;
     width: 180px;
   }
@@ -99,6 +118,7 @@ html, body { /*KEEP*/
   .nav-menu-link:hover { 
     background: #f4a5d9;
     transition: all 0.2s ease-out;
+    /* height: 32px; */
   }
   
   .nav-menu-about {
@@ -109,7 +129,7 @@ html, body { /*KEEP*/
     font-size: 1rem;
     justify-content: center;
     border-radius: 5px 5px 0 0;
-    height: 30px; 
+    height: 32px; 
     align-self: end;
     width: 180px;
   }
