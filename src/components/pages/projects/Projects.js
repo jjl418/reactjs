@@ -10,6 +10,11 @@ import dog_unknown from '../../../images/project1_images/dog_unknown.png';
 import rat_unknown from '../../../images/project1_images/rat_unknown.png';
 import p1_video from '../../../videos/p1_demo_video.mp4';
 import rabbit from '../../../images/project1_images/rabbit2.png';
+import chad_thumbnail from '../../../images/project2_images/chad_thumbnail.png';
+import mummy_thumbnail from '../../../images/project2_images/mummy_thumbnail.png';
+import lady_thumbnail from '../../../images/project2_images/lady_thumbnail.png';
+import samurai_thumbnail from '../../../images/project2_images/samurai_thumbnail.png';
+import statue_thumbnail from '../../../images/project2_images/statue_thumbnail.png';
 import React, { useState } from 'react';
 
 
@@ -37,7 +42,6 @@ function Projects() {
     require('../../../images/project1_images/cat.png'),
     require('../../../images/project1_images/dog.png'),
     require('../../../images/project1_images/rat.png'),
-    // Add more image URLs as needed
   ];
   const profile_alias = [
     'Mr. Cat',
@@ -62,6 +66,19 @@ function Projects() {
   ];
   const nextP2Image = () => {
     setCurrentIndex3((prevIndex2) => (prevIndex2 === p2_images.length - 1 ? 0 : prevIndex2 + 1));
+  };
+
+  const [currentIndex4, setCurrentIndex4] = useState(0); //index for changing p2 characters
+  const character_images = [
+    require('../../../images/project2_images/chad.png'),
+    require('../../../images/project2_images/mummy.png'),
+    require('../../../images/project2_images/lady.png'),
+    require('../../../images/project2_images/samurai.png'),
+    require('../../../images/project2_images/statue.png'),
+    // Add more image URLs as needed
+  ];
+  const changeCharacters = (index) => {
+    setCurrentIndex4(index);
   };
 
     return (
@@ -149,12 +166,7 @@ function Projects() {
             <h1 className = "profile-name">
               {profile_alias[currentIndex2]}
             </h1>
-            {/* <h1 className = "profile-content">
-              role: customer
-              gender: male
-              appears: all levels
-              difficulty: easy
-            </h1> */}
+           
             <h1 className = "profile-content">
               {profile_info[currentIndex2]}
             </h1>
@@ -183,7 +195,7 @@ function Projects() {
               </button>
               <div className = "character-divider"/>
               <h1 className = "characters-box-description">
-                * hover and click over the above profiles to learn
+                * hover and click over the character silhouettes to learn
                 more *
               </h1>
             </div>
@@ -200,7 +212,43 @@ function Projects() {
           <button className = 'next-button2' onClick= {nextP2Image}>
             <img src = {next_icon} className = "next-icon" alt = ""/>
           </button>
-          <img src = {p2_images[currentIndex3]} className = "p2-image" alt = ""/>
+          <div className = "p2-snapshot-container">
+            <div className = "p2-snapshot-caption-container">
+              <h1 className = "p2-snapshot-caption">
+                Game Snapshots
+              </h1>
+            </div>
+            <img src = {p2_images[currentIndex3]} className = "p2-image" alt = ""/>
+          </div>
+          
+          
+          <div className = "p2-character-containers">
+            <div className = "p2-character-caption-box">
+              <h1 className = "p2-character-caption">
+                Characters
+              </h1>
+            </div>
+            
+            <div className = "character-button-container">
+              <button className = "chad-button" onClick = {() => changeCharacters(0)}>
+                <img src = {chad_thumbnail} className = "chad-thumbnail" alt = ""/>
+              </button>
+              <button className = "mummy-button" onClick = {() => changeCharacters(1)}>
+                <img src = {mummy_thumbnail} className = "mummy-thumbnail" alt = ""/>
+              </button>
+              <button className = "lady-button" onClick = {() => changeCharacters(2)}>
+                <img src = {lady_thumbnail} className = "lady-thumbnail" alt = ""/>
+              </button>
+              <button className = "samurai-button" onClick = {() => changeCharacters(3)}>
+                <img src = {samurai_thumbnail} className = "samurai-thumbnail" alt = ""/>
+              </button>
+              <button className = "statue-button" onClick = {() => changeCharacters(4)}>
+                <img src = {statue_thumbnail} className = "statue-thumbnail" alt = ""/>
+              </button>
+            </div>
+           
+            <img src = {character_images[currentIndex4]} className = "p2-characters" alt = ""/>
+          </div>
         </div>
       </div>
       
