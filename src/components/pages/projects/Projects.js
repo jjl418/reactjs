@@ -15,6 +15,12 @@ import mummy_thumbnail from '../../../images/project2_images/mummy_thumbnail.png
 import lady_thumbnail from '../../../images/project2_images/lady_thumbnail.png';
 import samurai_thumbnail from '../../../images/project2_images/samurai_thumbnail.png';
 import statue_thumbnail from '../../../images/project2_images/statue_thumbnail.png';
+import chad_animation from '../../../videos/Animation_Monster1_Final.mp4';
+import mummy_animation from '../../../videos/Animation_Monster2_Final.mp4';
+import lady_animation from '../../../videos/Animation_Monster3_Final.mp4';
+import samurai_animation from '../../../videos/Animation_Monster4_Final.mp4';
+import statue_animation from '../../../videos/Animation_Monster5_Final.mp4';
+import book_animation from '../../../videos/Book_Monster_Final.mp4';
 import React, { useState } from 'react';
 
 
@@ -228,6 +234,11 @@ function Projects() {
                 Characters
               </h1>
             </div>
+            <div className = "p2-animation-caption-box">
+              <h1 className = "p2-animation-caption">
+                Killing Animations
+              </h1>
+            </div>
             
             <div className = "character-button-container">
               <button className = "chad-button" onClick = {() => changeCharacters(0)}>
@@ -246,7 +257,15 @@ function Projects() {
                 <img src = {statue_thumbnail} className = "statue-thumbnail" alt = ""/>
               </button>
             </div>
-           
+            <div className = "p2-animation-container">
+              <video src={chad_animation} className = "chad-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+              <video src={mummy_animation} className = "mummy-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+              <video src={lady_animation} className = "lady-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+              <video src={samurai_animation} className = "samurai-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+              <video src={statue_animation} className = "statue-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+              <video src={book_animation} className = "book-video-box" width="248" height="140" controls="controls" autoplay= {false} />
+            </div>
+            
             <img src = {character_images[currentIndex4]} className = "p2-characters" alt = ""/>
           </div>
         </div>

@@ -755,7 +755,7 @@
     align-self: end;
     justify-content: flex-start;
     width: 1360px;
-    height: 1000px; /*500*/
+    height: 1200px; /*500*/
     background-image: linear-gradient(#555555 , #4f4f4f);
     border-top: #6c6c6c ;
     border-right: #626262 ;
@@ -862,11 +862,11 @@
     position:absolute;
     display: flex;
     width: 641px;
-    height: 560px;
+    height: 1150px;
     margin-top: 15px;
     margin-left: 695px;
     /* background-color: #252432; */
-    background-image: linear-gradient(#313042 , rgb(71, 74, 109));
+    background-image: linear-gradient(#313042 , rgb(57, 59, 85));
     border-top: #434159;
     border-right: #2e2c45;
     border-left:#38364a;
@@ -1099,7 +1099,112 @@
     border-right: #2e2c45;
     border-left:#38364a;
     border-bottom: #22212e;
-    
-
     border-style: solid;
+}
+
+.p2-animation-caption-box
+{
+    margin-top: 555px;
+    margin-left: 14px;
+    width: 250px;
+    height: 40px;
+    /* background-color: #4a476e; #252432 */
+    
+    background-color: #323242;
+
+    display: flex;
+    position: absolute;
+    border-top: #434159;
+    border-right: #2e2c45;
+    border-left:#38364a;
+    border-bottom: #22212e;
+    border-style: solid;
+}
+
+.p2-animation-caption
+{
+    font-family: "MSSansSerifBold";
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(176, 176, 176);
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color:#000000;
+    margin-left: 11px;
+    align-self: center;
+}
+
+.chad-video-box
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.mummy-video-box
+{
+    margin-top: 20px;
+    margin-left: 285px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.lady-video-box
+{
+    margin-top: 177px;
+    margin-left: 20px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.samurai-video-box
+{
+    margin-top: 177px;
+    margin-left: 285px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.statue-video-box
+{
+    margin-top: 334px;
+    margin-left: 20px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.book-video-box
+{
+    margin-top: 334px;
+    margin-left: 285px;
+    border: solid 3px;
+    position:absolute;
+    border-color: #2e2c45;
+}
+
+.p2-animation-container
+{
+    width: 560px;
+    height: 498px;
+    background-color: #313042;
+    position:absolute;
+    /* display: flex; */
+    margin-top: 615px;
+    margin-left: 38px;
+
+    border-top: #434159;
+    border-right: #2e2c45;
+    border-left:#38364a;
+    border-bottom: #22212e;
+    border-style: solid;
+}
+
+.p2-game-explanation-box
+{
+    
 }
