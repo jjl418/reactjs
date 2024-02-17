@@ -124,7 +124,7 @@ function Projects() {
               </h1>
             </div>
             <h1 className = "p1-credits-caption-text">
-              <h1 className = "p1-credits-role">Art:</h1> 
+              <h1 className = "p1-credits-role">Artist:</h1> 
               Julianne Lee
               <p/>
               <h1 className = "p1-credits-role">Engineering:</h1> 
@@ -227,6 +227,69 @@ function Projects() {
             <img src = {p2_images[currentIndex3]} className = "p2-image" alt = ""/>
           </div>
           
+          <div className = "p2-game-explanation-container">
+            <div className = "p2-game-explanation-box">
+              <div className = "p2-explanation-caption-box">
+                <h1 className = "p1-explanation-caption">
+                  Game Explanation
+                </h1>
+              </div>
+              <h1 className = "p2-explanation-text">
+                 Monster Bartender is a 2.5D, singleplayer, horror, restaurant serving game.
+                 Your job is to serve the correct drink to each customer before they run out patience
+                 and kill you. Choosing the wrong speech bubbles can upset the customer,
+                 resulting in death. You can use a recipe book to 
+                 help aid you, but staring too long will summon a book demon.
+              </h1>
+            </div>
+
+            <div className = "p2-demo-box">
+              <div className = "p2-demo-caption-box">
+                <h1 className = "p1-demo-caption">
+                  Demo Video
+                </h1>
+              </div>
+            </div>
+
+            <div className = "p2-credits-box">
+              <div className= "p2-credits-caption-box">
+                <h1 className = "p2-credits-caption">
+                  Credits
+                </h1>
+              </div>
+              <h1 className = "p2-credits-caption-text">
+                <h1 className = "p1-credits-role">Artist:</h1> 
+                Julianne Lee
+                <p/>
+                <h1 className = "p1-credits-role">Engineering:</h1> 
+                Birdie Barr
+                <p/>
+                <h1 className = "p1-credits-role">Sound Producer:</h1> 
+                Moodin Jang
+                <p/>
+                <h1 className = "p1-credits-role">Composers:</h1> 
+                Johnny Ho
+                <p/>
+                Diego Gomez
+                <p/>
+                <h1 className = "p1-credits-role">Sound Designers:</h1>
+                Johnny Ho
+                <p/>
+                Diego Gomez
+                <p/>
+                Moodin Jang
+                <p/>
+                Xiaohe Zhao
+                <p/>
+                <h1 className = "p1-credits-role">Made with:</h1>
+                Unity
+                <p/>
+                <h1 className = "p1-credits-role">Art Softwares:</h1>
+                Procreate
+                <p/>
+              </h1>
+            </div>
+          </div>
           
           <div className = "p2-character-containers">
             <div className = "p2-character-caption-box">
@@ -239,7 +302,6 @@ function Projects() {
                 Killing Animations
               </h1>
             </div>
-            
             <div className = "character-button-container">
               <button className = "chad-button" onClick = {() => changeCharacters(0)}>
                 <img src = {chad_thumbnail} className = "chad-thumbnail" alt = ""/>
