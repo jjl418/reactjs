@@ -45,6 +45,8 @@ html, body { /*KEEP*/
     align-items: center;
     display: flex;
     height: 40px;
+    /* background-color: #6561e9; */
+    /* align-items: ; */
   }
 
   .navbar-initials { /*KEEP*/
@@ -78,18 +80,21 @@ html, body { /*KEEP*/
     justify-content: end;
     list-style: none;
     width: 60vw; /* may need to change later */
-    align-self: end;
-    border-color: #0fbec100;
+    /* align-self: end; */
+    /* border-color: #0fbec100;
     border-style: solid;
-    border-width: 2.5px;
-    background-color: none;
-    height: 30px;
+    border-width: 2.5px; */
+    /* background-color:#0fbec1; */
+    height: 40px;
+    /* position:absolute; */
+    align-items: end;
   }
   
   .nav-menu-item {
     background: #fdb4e5;
+    
     height: 30px; 
-    align-self: end;
+    align-items: end;
     border-radius: 5px 5px 0 0;
     border-left: rgb(255, 255, 255);
     border-top: rgb(255, 255, 255);
@@ -98,6 +103,7 @@ html, body { /*KEEP*/
     border-style: solid;
     box-shadow: -1.5px -1.5px #000000, 2px -2px #000000, -2px 0px #000000,
     2px 0px #000000, 0 -2px #000000;
+    /* background-color:#c10f0f; */
   }
   
   .nav-menu-link 
@@ -111,7 +117,7 @@ html, body { /*KEEP*/
     text-decoration: none;
     border-radius: 5px 5px 0 0;
     height: 32px; 
-    align-self: end;
+    /* align-self: end; */
     width: 180px;
   }
   
