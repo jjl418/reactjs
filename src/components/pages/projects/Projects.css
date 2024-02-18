@@ -1248,7 +1248,7 @@
     
     border-top: #d578bc;
     border-left: #f49ca4;
-    border-right: #8b3c77;
+    border-right: #a54b8e;
     border-bottom: #8b3c77;
     border-style: solid;
     
@@ -1396,5 +1396,94 @@
 
 .p2-demo-video-box
 {
-    
+    margin-left: 14px;
+    margin-top: 8px;
+    position: absolute;
+    background-color: #92337964;
+    display: flex;
+    padding: 2px;
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: #80256864;
+}
+
+.p2-notes-caption-box
+{
+    position: absolute;
+    margin-left: 4px;
+    margin-top: 203px;
+    display: flex;
+    width: 83px;
+    height: 33px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #92337964;
+    border-width: 2px;
+    border-color: #80256864;
+}
+
+.p2-notes-caption
+{
+    font-family: "MSSansSerifBold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color:#000000;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.p2-notes-text
+{
+    position:absolute;
+    font-family: "MSSansSerifBold";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#000000;
+    margin-left: 8px;
+    margin-top: 246px;
+    /* background-color: #7a7a7a; */
+    width: 339px;
+}
+
+.p2-notes-special-text
+{
+    margin-top: 4px;
+    font-family: "MSSansSerifBold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff8ce6;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#000000;
+    position:absolute;
+    /* background-color: #000000; */
+}
+
+.p2-class-name
+{
+    position:absolute;
+    font-family: "MSSansSerifBold";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#000000;
+    margin-left: 8px;
+    margin-top: 370px;
+    /* background-color: #7a7a7a; */
+    width: 339px;   
+}
+
+.my-name
+{
+    font-family: "MSSansSerifBold";
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(254, 241, 167);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color:#000000;
+    /* background-color: #7a7a7a; */
 }

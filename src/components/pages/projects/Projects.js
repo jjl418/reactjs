@@ -21,6 +21,7 @@ import lady_animation from '../../../videos/Animation_Monster3_Final.mp4';
 import samurai_animation from '../../../videos/Animation_Monster4_Final.mp4';
 import statue_animation from '../../../videos/Animation_Monster5_Final.mp4';
 import book_animation from '../../../videos/Book_Monster_Final.mp4';
+import p2_video from '../../../videos/Monster_Bartender_demo.mp4';
 import React, { useState } from 'react';
 
 
@@ -125,10 +126,10 @@ function Projects() {
             </div>
             <h1 className = "p1-credits-caption-text">
               <h1 className = "p1-credits-role">Artist:</h1> 
-              Julianne Lee
+              <h1 className = "my-name">Julianne Lee</h1>
               <p/>
               <h1 className = "p1-credits-role">Engineering:</h1> 
-              Julianne Lee
+              <h1 className = "my-name">Julianne Lee</h1>
               <p/>
               <h1 className = "p1-credits-role">Music:</h1> 
               ElvGames (Unity store)
@@ -249,6 +250,23 @@ function Projects() {
                   Demo Video
                 </h1>
               </div>
+              <video src={p2_video} className = "p2-demo-video-box" width="320" height="180" controls="controls" autoplay= {false} />
+              <div className= "p2-notes-caption-box">
+                <h1 className = "p2-notes-caption">
+                  Notes
+                </h1>
+              </div>
+              <div className = "p2-notes-text">
+                Monster Bartender was a in-class project assignment.
+                Our class teamed up with Berklee Music students to 
+                create this game.
+                <p/>
+                <h1 className = "p2-notes-special-text">Course Name:</h1> 
+              </div>
+              {/* CTIN 489: Intermediate Game Design and Production */}
+              <h1 className = "p2-class-name">
+                CTIN 489: Intermediate Game Design and Production
+              </h1>
             </div>
 
             <div className = "p2-credits-box">
@@ -259,7 +277,7 @@ function Projects() {
               </div>
               <h1 className = "p2-credits-caption-text">
                 <h1 className = "p1-credits-role">Artist:</h1> 
-                Julianne Lee
+                <h1 className = "my-name">Julianne Lee</h1>
                 <p/>
                 <h1 className = "p1-credits-role">Engineering:</h1> 
                 Birdie Barr
