@@ -22,6 +22,10 @@ import samurai_animation from '../../../videos/Animation_Monster4_Final.mp4';
 import statue_animation from '../../../videos/Animation_Monster5_Final.mp4';
 import book_animation from '../../../videos/Book_Monster_Final.mp4';
 import p2_video from '../../../videos/Monster_Bartender_demo.mp4';
+import bb_concept from '../../../images/project3_images/BB_concept.png';
+import laugh_gif from '../../../images/project3_images/BB_laugh.gif';
+import sad_gif from '../../../images/project3_images/BB_sad.gif';
+import neutral_gif from '../../../images/project3_images/BB_neutral.gif';
 import React, { useState } from 'react';
 
 
@@ -82,11 +86,35 @@ function Projects() {
     require('../../../images/project2_images/lady.png'),
     require('../../../images/project2_images/samurai.png'),
     require('../../../images/project2_images/statue.png'),
-    // Add more image URLs as needed
   ];
   const changeCharacters = (index) => {
     setCurrentIndex4(index);
   };
+
+  //Project 3: Bomb Buddies
+  const [currentIndex5, setCurrentIndex5] = useState(0); //index for p3_images list
+  const p3_images = [
+    require('../../../images/project3_images/BB_menu.png'),
+    require('../../../images/project3_images/BB_party_mode.png'),
+    require('../../../images/project3_images/BB_drawing_shapes.png'),
+    require('../../../images/project3_images/BB_bomb.png'),
+    require('../../../images/project3_images/BB_bestbuddies.png'),
+    require('../../../images/project3_images/BB_win.png'),
+    require('../../../images/project3_images/BB_lose.png'),
+  ];
+  const nextP3Image = () => {
+    setCurrentIndex5((prevIndex) => (prevIndex === p3_images.length - 1 ? 0 : prevIndex + 1));
+  };
+  //artist credits
+  const p3_art_credits = [
+    'UI Artist: Dorian Trinh / Menu Art: Devis Lai / Logo Art: Julianne Lee',
+    'UI Artist: Dorian Trinh / Thumbnail Art: Annie Holley, Kylie Komori, Devis Lai',
+    'Artist: Kylie Komori',
+    'UI Artist: Dorian Trinh',
+    'UI Artist: Dorian Trinh / Board Art: Boston Moreland',
+    'UI Artist: Dorian Trinh',
+    'UI Artist: Dorian Trinh',
+  ];
 
     return (
       <>
@@ -161,13 +189,10 @@ function Projects() {
           </button>
 
 
-          <div className = "p1-container">
-            {/* <img src = {creamistry_menu} className = "p1-image" alt= ""/> */}
+          <div className = "mobile-container">
             <img src = {p1_images[currentIndex]} className = "p1-image" alt = ""/>
           </div>
           <div className = "id-card">
-            {/* <img src = {cat} className = "profile" alt = ""/> */}
-
             <img src = {profile_images[currentIndex2]} className = "profile" alt = ""/>
 
             <h1 className = "profile-name">
@@ -349,6 +374,44 @@ function Projects() {
             <img src = {character_images[currentIndex4]} className = "p2-characters" alt = ""/>
           </div>
         </div>
+      
+        {/* AGP GAME: BOMB BUDDIES*/}
+        <div className = "p3-tab-container">
+          <h1 className = "p2-caption">
+            Project 3: Bomb Buddies
+          </h1>
+        </div>
+        <div className = "p3-tab-layout">
+          <button className = 'next-button' onClick= {nextP3Image}>
+            <img src = {next_icon} className = "next-icon" alt = ""/>
+          </button>
+          <div className = "mobile-container">
+            <img src = {p3_images[currentIndex5]} className = "p3-image" alt = ""/>
+          </div>
+          <h1 className = "p3-art-credits-text">
+            {p3_art_credits[currentIndex5]}
+          </h1>
+          <h1 className = "concept-text">
+              Concept Art
+          </h1>
+          <img src = {bb_concept} className = "p3-concept" alt = "" />
+          <h1 className = "concept-credit">
+            Concept Design: Jenny Jiang / Render: Julianne Lee
+          </h1>
+          <img src = {laugh_gif} className = "laugh-gif" alt = ""/>
+          <img src = {sad_gif} className = "sad-gif" alt = ""/>
+          <img src = {neutral_gif} className = "neutral-gif" alt = ""/>
+          <h1 className = "animation-credit">
+            Animation Line Art: Nicole Wang / Render: Julianne Lee
+          </h1>
+        </div>
+        
+        <div className = "p3-tab-container-2">
+
+        </div>
+
+
+
       </div>
       
       
