@@ -26,6 +26,8 @@ import bb_concept from '../../../images/project3_images/BB_concept.png';
 import laugh_gif from '../../../images/project3_images/BB_laugh.gif';
 import sad_gif from '../../../images/project3_images/BB_sad.gif';
 import neutral_gif from '../../../images/project3_images/BB_neutral.gif';
+import p3_video from '../../../videos/BB_demo.mp4';
+import qr_image from '../../../images/project3_images/BB_QR.png';
 import React, { useState } from 'react';
 
 
@@ -173,9 +175,9 @@ function Projects() {
             </h1>
             <img src = {rabbit} className = "rabbit" alt = ""/>
           </div>
-          
-          
         </div>
+
+
         <div className = "p1-tab-container">
           <div className = "p1-caption-container">
             <h1 className = "p1-caption">
@@ -240,6 +242,7 @@ function Projects() {
             Project 2: Monster Bartender
           </h1>
         </div>
+
         <div className = "p2-tab-layout">
           <button className = 'next-button2' onClick= {nextP2Image}>
             <img src = {next_icon} className = "next-icon" alt = ""/>
@@ -376,6 +379,71 @@ function Projects() {
         </div>
       
         {/* AGP GAME: BOMB BUDDIES*/}
+        <div className = "p3-tab-container-2">
+          <div className = "p3-explanation-container">
+              <h1 className = "p1-explanation-text">
+                Bomb Buddies is a mobile, Jackbox party-esque, co-op game with 
+                a series of AR-based mini games. The premise of the game is that
+                a hacker forces you and your friends to play a series of mini games 
+                so your phone does not "explode". Some mini games include: defusing 
+                virtual bombs scattered across your room, answering trivia questions
+                with a friend, and tracing provided shapes using the tip of your nose.
+              </h1>
+              <div className = "p3-explanation-box">
+                <h1 className = "p1-explanation-caption">
+                  Game Explanation
+                </h1>
+              </div>
+          </div>
+
+          <div className = "p3-demo-container">
+            <div className = "p3-demo-box">
+              <h1 className = "p1-demo-caption">
+                Demo Video
+              </h1>
+            </div>
+            <video src={p3_video} className = "p3-demo-video-box" width="350" height="200" controls="controls" autoplay= {false} />
+          </div>
+
+          <div className = "p3-qr-container">
+            <div className = "p3-qr-box">
+              <h1 className = "p1-demo-caption">
+                QR Code
+              </h1>
+            </div>
+            <img src = {qr_image} className = "qr-image" alt = ""/>
+
+            <div className= "bb-link">
+              <a href="https://apps.apple.com/us/app/bomb-buddies-usc-games/id6443524416">
+                https://apps.apple.com/us/app/bomb-buddies-usc-games/id6443524416
+              </a>
+            </div>
+            
+          </div>
+
+          <div className = "p3-credits-container">
+            <div className = "p3-credits-box">
+              <h1 className = "p1-credits-caption">
+                My Role
+              </h1>
+            </div>
+
+            <h1 className = "p3-credits-caption-text">
+              <h1 className = "p1-credits-role">Art Director:</h1> 
+              <h1 className = "my-name">Julianne Lee</h1>
+              <p/>
+              My role as Art Director was to assign tasks, fix artwork to maintain
+              consistency, take on tasks that are shorthanded, add assets on unity,
+              give feedback to fellow artists, and make routine checkups with the director.
+              Bomb Buddies was my senior Capstone Project (Advanced Game Project) at USC.
+            </h1>
+
+            <a href="/Bomb Buddies Credits.pdf" download className= "bb-credits">
+              Full Credits
+            </a>
+
+          </div>
+        </div>
         <div className = "p3-tab-container">
           <h1 className = "p2-caption">
             Project 3: Bomb Buddies
@@ -406,9 +474,7 @@ function Projects() {
           </h1>
         </div>
         
-        <div className = "p3-tab-container-2">
-
-        </div>
+      
 
 
 
