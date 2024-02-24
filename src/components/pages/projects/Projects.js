@@ -5,6 +5,7 @@ import chocolate_icecream from '../../../images/project1_images/chocolate_icecre
 import strawberry_icecream from '../../../images/project1_images/strawberry_icecream.png';
 import vanilla_icecream from '../../../images/project1_images/vanilla_icecream.png';
 import next_icon from '../../../images/decor/next_icon.png';
+import prev_icon from '../../../images/decor/prev_icon.png';
 import cat_unknown from '../../../images/project1_images/cat_unknown.png';
 import dog_unknown from '../../../images/project1_images/dog_unknown.png';
 import rat_unknown from '../../../images/project1_images/rat_unknown.png';
@@ -140,6 +141,10 @@ function Projects() {
   ];
   const nextP4Image = () => {
     setCurrentIndex6((prevIndex) => (prevIndex === p4_images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const prevP4Image = () => {
+    setCurrentIndex6((prevIndex) => (prevIndex === 0 ? p4_images.length - 1 : prevIndex - 1));
   };
 
     return (
@@ -556,6 +561,11 @@ function Projects() {
           <button className = 'p4-next-button' onClick= {nextP4Image}>
             <img src = {next_icon} className = "next-icon" alt = ""/>
           </button>
+
+          <button className = 'p4-prev-button' onClick= {prevP4Image}>
+            <img src = {prev_icon} className = "prev-icon" alt = ""/>
+          </button>
+
           <div className = "presentation-container">
             <img src = {p4_images[currentIndex6]} className = "p4-image" alt = ""/>
           </div>

@@ -2299,3 +2299,27 @@
     justify-items: center;
 }
 
+.p4-prev-button
+{
+    position: absolute;
+    margin-top: 188px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    z-index: 2;
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+
+    box-shadow: 1.5px 1.5px #8d8d8d;
+}
+
+.prev-icon
+{
+    align-self: center;
+    vertical-align: center;
+    padding-left: 4px;
+    width: 18px;
+    height: 20px;
+}
