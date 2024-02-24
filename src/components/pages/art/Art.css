@@ -1,0 +1,66 @@
+.projects-background-2
+{
+    width: 100%;
+    background:
+    conic-gradient(from 90deg at 3px 3px,#0000 90deg,rgb(255, 168, 224) 0) 
+    0 0/100px 100px;
+    position: absolute;
+    top: 42px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    z-index: 0;
+    height: 1000px;
+}
+
+.sketchbook-tabs
+{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    list-style: none;
+    /* align-self: end; */
+    /* border-color: #0fbec100;
+    border-style: solid;
+    border-width: 2.5px; */
+    background-color:#e5e5e5;
+    height: 40px;
+    /* position:absolute; */
+    align-items: end;
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 388px;
+}
+
+.art-tab
+{
+    background: #9fb6f4;
+    background-image: linear-gradient(to right, #85aea2 , #4c9898);
+    
+    height: 30px; 
+    width: 180px;
+    align-items: flex-end;
+    border-radius: 5px 5px 0 0;
+    /* border-left: #b3c4ee;
+    border-top: #ccd9f8;
+    border-bottom: #9fb6f4;
+    border-right: #8299da;
+    border-style: solid; */
+    box-shadow: -1.5px -1.5px #000000, 2px -2px #000000, -2px 0px #000000,
+    2px 0px #000000, 0 -2px #000000;
+    color: #282828;
+    
+    justify-content: center;
+    display: flex;
+}
+
+.art-tab-caption
+{
+    font-family: monospace;
+    font-size: 1.2rem;
+    align-self: center;
+    color: rgb(84, 173, 180);
+    /* color: #282828; */
+    font-family: monospace;
+    font-size: 1.2rem;
+}
