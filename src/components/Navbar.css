@@ -1,6 +1,5 @@
 html, body { /*KEEP*/
   margin: 0;
-  /* background:rgb(255, 150, 232);s */
   background:#fdb4e5;
   width: 100%;
 }
@@ -24,6 +23,7 @@ html, body { /*KEEP*/
     border-top: #0fbec1;
     border-right: #0fbec1;
     border-left:#0fbec1;
+    /* width: 100%; */
     /* background-image: linear-gradient(to right, #82eef0 , rgb(89, 166, 249)); */
     /* background-image: linear-gradient(to right, #889cff , #827fe6); */
     background-image: linear-gradient(to right, #939ed8 , #6561e9);
@@ -80,14 +80,14 @@ html, body { /*KEEP*/
     justify-content: end;
     list-style: none;
     width: 60vw; /* may need to change later */
-    /* align-self: end; */
-    /* border-color: #0fbec100;
-    border-style: solid;
-    border-width: 2.5px; */
-    /* background-color:#0fbec1; */
+    padding-right: 4px;
     height: 40px;
-    /* position:absolute; */
     align-items: end;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #0fbec1;
+    /* overflow: hidden; */
+    white-space: nowrap;
   }
   
   .nav-menu-item {
@@ -103,7 +103,10 @@ html, body { /*KEEP*/
     border-style: solid;
     box-shadow: -1.5px -1.5px #000000, 2px -2px #000000, -2px 0px #000000,
     2px 0px #000000, 0 -2px #000000;
-    /* background-color:#c10f0f; */
+
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    
   }
   
   .nav-menu-link 

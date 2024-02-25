@@ -273,9 +273,11 @@ function Projects() {
         </div>
 
         <div className = "p2-tab-layout">
-          <button className = 'next-button2' onClick= {nextP2Image}>
+          <button className = 'p2-next-button' onClick= {nextP2Image}>
             <img src = {next_icon} className = "next-icon" alt = ""/>
           </button>
+
+          
           <div className = "p2-snapshot-container">
             <div className = "p2-snapshot-caption-container">
               <h1 className = "p2-snapshot-caption">

@@ -11,8 +11,6 @@
     left:0px;
     z-index: 0;
     height: 4000px;
-    /* height: 100%; */
-    /* display: flex;s */
 }
 
 .p1-tab-container
@@ -286,11 +284,6 @@
     padding: 9px;
     margin-top: 250px;
     margin-left: 322px;
-    
-    /* border-top:#d3d3d3;
-    border-bottom: #b1b1b1;
-    border-right: #949494;
-    border-left: #c0c0c0; */
     
     border:#000000;
     border-style: solid;
@@ -751,12 +744,10 @@
 .p2-tab-layout
 {
     display:flex;
-    /* position: absolute; */
     align-self: end;
     justify-content: flex-start;
     width: 1360px;
     height: 1200px; 
-    /* height: 1200px; */
     background-image: linear-gradient(#6b6b6b , #616161);
     border-top: #808080;
     border-right: #5d5d5d;
@@ -764,7 +755,6 @@
     border-bottom: #494949;
     border-style: solid;
     margin-left: 30px;
-    /* margin-bottom: none; */
     border-radius: 2;
     box-shadow: 2px 2px #000000, -2px 2px #000000, -2px 0px #000000,
     2px 0px #000000, 0 2px #000000, -2px -2px #000000, 2px -2px #000000;
@@ -783,11 +773,11 @@
     2px 0px 1.5px #797979, 0 2px 1.5px #797979, -2px -2px 1.5px #797979, 2px -2px 1.5px #797979;
 }
 
-.next-button2
+.p2-next-button
 {
     position: absolute;
     margin-top: 236px;
-    margin-left: 642px;
+    margin-left: 644px;
     width: 30px;
     height: 30px;
     display: flex;
