@@ -85,7 +85,7 @@ html, body { /*KEEP*/
     align-items: end;
 
     border: 1px solid rgba(0, 0, 0, 0);
-    background-color: #0fbec1;
+    /* background-color: #0fbec1; */
     /* overflow: hidden; */
     white-space: nowrap;
   }
@@ -112,7 +112,7 @@ html, body { /*KEEP*/
   .nav-menu-link 
   {
     align-items: center;
-    color: #282828;
+    color: hsl(0, 0%, 16%);
     display: flex;
     font-family: monospace;
     font-size: 1.2rem;
@@ -187,7 +187,6 @@ html, body { /*KEEP*/
       /* border-top: #00000000; */
       /* background-image: linear-gradient(#7dcdec , rgb(255, 152, 207));  */
       background-image: linear-gradient(#50b3f0 , rgb(242, 138, 221));
-      /* background-color: #a263ad6a;    */
       justify-content: center;
       display: flex;
       justify-self: center;
@@ -212,7 +211,6 @@ html, body { /*KEEP*/
       background: none;
       clip-path: none;
       -webkit-clip-path: none;
-      /* width: 35%; */
       width: 180px;
       margin: none;
       padding: none;
