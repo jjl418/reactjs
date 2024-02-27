@@ -789,12 +789,12 @@
     box-shadow: 1.5px 1.5px #8d8d8d;
 }
 
-.next-button2:hover
+.p2-next-button:hover
 {
     background-color: rgb(172, 172, 172);
 }
 
-.next-button2:active
+.p2-next-button:active
 {
     background-color: rgb(151, 151, 151);
 }
@@ -1992,6 +1992,15 @@
     box-shadow: 1.5px 1.5px #8d8d8d;
 }
 
+.p4-next-button:hover
+{
+    background-color: rgb(221, 221, 221);
+}
+
+.p4-next-button:active{
+    background-color: rgb(193, 193, 193);
+}
+
 .presentation-container
 {
     margin-top: 62px;
@@ -2303,6 +2312,15 @@
     background-color: rgb(235, 235, 235);
 
     box-shadow: 1.5px 1.5px #8d8d8d;
+}
+
+.p4-prev-button:hover
+{
+    background-color: rgb(221, 221, 221);
+}
+
+.p4-prev-button:active{
+    background-color: rgb(193, 193, 193);
 }
 
 .prev-icon
