@@ -341,13 +341,10 @@
 
 .bb-credits
 {
-    /* position:absolute; */
     font-family: "MSSansSerifBold";
     font-size: 1.2rem;
     font-weight: bold;
     background-color: #ba4189ac;
-    /* border: solid 2.3px; */
-    /* border-color: #ac2b79; */
     color: rgb(221, 221, 221);
     margin-top: 338px;
     border-radius: 5px;

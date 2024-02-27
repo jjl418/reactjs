@@ -224,3 +224,12 @@
     /* background-color: #596da4; */
     justify-content: center;
 }
+
+.three-d-art-content
+{
+    display: flex;
+    height: 400px;
+    width: 900px;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+}

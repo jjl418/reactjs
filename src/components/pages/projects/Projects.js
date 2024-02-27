@@ -5,7 +5,6 @@ import Project2 from './Project2';
 import Project3 from './Project3';
 import Project4 from './Project4';
 
-
 function Projects() {
   
     return (

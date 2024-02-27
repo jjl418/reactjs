@@ -12,17 +12,32 @@ function Art() {
     setActiveTab(tabNumber);
   };
 
+  //2D ART
   const [currentIndex, setCurrentIndex] = useState(0); //index for p1_images list
   const art_images = [
     require('../../../images/art_images/hand study.png'),
     require('../../../images/art_images/anime face.jpg'),
+    require('../../../images/art_images/character.jpg'),
+    require('../../../images/project2_images/mb_gameplay.png'),
   ];
   const nextArtImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex === art_images.length - 1 ? 0 : prevIndex + 1));
   };
-
   const prevArtImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex === art_images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  //3D ART
+  const [currentIndex1, setCurrentIndex1] = useState(0); //index for p1_images list
+  const threeD_art_images = [
+    require('../../../images/art_images/room.png'),
+  ];
+  const next3DArtImage = () => {
+    setCurrentIndex1((prevIndex) => (prevIndex === threeD_art_images.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  const prev3DArtImage = () => {
+    setCurrentIndex1((prevIndex) => (prevIndex === threeD_art_images.length - 1 ? 0 : prevIndex + 1));
   };
 
     return (
@@ -40,7 +55,6 @@ function Art() {
                 3D-art
               </h1>
             </button>
-
           </div>
 
 
@@ -56,16 +70,24 @@ function Art() {
                 <button className = 'prev-button-art' onClick= {prevArtImage}>
                   <img src = {prev_icon} className = "prev-icon" alt = ""/>
                 </button>
-                {/* <div className = "art-images">
-                  
-                </div> */}
                 <div className = "art-container">
                   <img src = {art_images[currentIndex]} className = "art-image" alt = ""/>
                 </div>
               </div>}
 
-              {activeTab === 2 && <div>
-                Content for Tab 2
+              {activeTab === 2 && 
+              <div className = "three-d-art-content">
+                <button className = 'next-button-art' onClick= {next3DArtImage}>
+                  <img src = {next_icon} className = "next-icon" alt = ""/>
+                </button>
+
+                <button className = 'prev-button-art' onClick= {prev3DArtImage}>
+                  <img src = {prev_icon} className = "prev-icon" alt = ""/>
+                </button>
+                <div className = "art-container">
+                  <img src = {threeD_art_images[currentIndex1]} className = "art-image" alt = ""/>
+                </div>
+                
               </div>}
             </div>
 
