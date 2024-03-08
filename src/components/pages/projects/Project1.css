@@ -260,6 +260,42 @@
     /* background-color: #9ab7fa; */
 }
 
+.prev-button
+{ 
+    position: absolute;
+    margin-top: 240px;
+    margin-left: 2px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    z-index: 2;
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+
+    box-shadow: 1.5px 1.5px #8d8d8d;
+}
+
+.prev-button:hover
+{
+    background-color: rgb(221, 221, 221);
+}
+
+.prev-button:active{
+    background-color: rgb(193, 193, 193);
+}
+
+.prev-icon
+{
+    /* padding-right: 5px; */
+    align-self: center;
+    vertical-align: center;
+    padding-left: 4px;
+    width: 18px;
+    height: 20px;
+    /* background-color: #9ab7fa; */
+}
+
 .character-list-container
 {
     background-color: #cfcfcfa5;

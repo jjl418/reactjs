@@ -10,6 +10,7 @@ import chocolate_icecream from '../../../images/project1_images/chocolate_icecre
 import strawberry_icecream from '../../../images/project1_images/strawberry_icecream.png';
 import vanilla_icecream from '../../../images/project1_images/vanilla_icecream.png';
 import next_icon from '../../../images/decor/next_icon.png';
+import prev_icon from '../../../images/decor/prev_icon.png';
 import React, { useState } from 'react';
 
 function Project1() {
@@ -27,6 +28,9 @@ function Project1() {
     ];
     const nextP1Image = () => {
         setCurrentIndex((prevIndex) => (prevIndex === p1_images.length - 1 ? 0 : prevIndex + 1));
+    };
+    const prevP1Image = () => {
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? p1_images.length - 1 : prevIndex - 1));
     };
 
     const [currentIndex2, setCurrentIndex2] = useState(0); //index for changing p1 character profiles
@@ -118,6 +122,9 @@ function Project1() {
             <div className = "p1-tab-layout">
                 <button className = 'next-button' onClick= {nextP1Image}>
                     <img src = {next_icon} className = "next-icon" alt = ""/>
+                </button>
+                <button className = 'prev-button' onClick = {prevP1Image}>
+                    <img src = {prev_icon} className = "prev-icon" alt = ""/>
                 </button>
 
 

@@ -13,6 +13,7 @@ import statue_animation from '../../../videos/Animation_Monster5_Final.mp4';
 import book_animation from '../../../videos/Book_Monster_Final.mp4';
 import p2_video from '../../../videos/Monster_Bartender_demo.mp4';
 import next_icon from '../../../images/decor/next_icon.png';
+import prev_icon from '../../../images/decor/prev_icon.png';
 import React, { useState } from 'react';
 
 function Project2() {
@@ -26,6 +27,10 @@ function Project2() {
     const nextP2Image = () => {
         setCurrentIndex3((prevIndex2) => (prevIndex2 === p2_images.length - 1 ? 0 : prevIndex2 + 1));
     };
+    const prevP2Image = () => {
+        setCurrentIndex3((prevIndex2) => (prevIndex2 === 0 ? p2_images.length - 1 : prevIndex2 - 1));
+    };
+
 
     const [currentIndex4, setCurrentIndex4] = useState(0); //index for changing p2 characters
     const character_images = [
@@ -50,7 +55,9 @@ function Project2() {
                 <button className = 'p2-next-button' onClick= {nextP2Image}>
                     <img src = {next_icon} className = "next-icon" alt = ""/>
                 </button>
-
+                <button className = 'p2-prev-button' onClick = {prevP2Image}>
+                    <img src = {prev_icon} className = "prev-icon" alt = ""/>
+                </button>
             
                 <div className = "p2-snapshot-container">
                     <div className = "p2-snapshot-caption-container">

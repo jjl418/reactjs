@@ -1,6 +1,7 @@
 import '../../../App';
 import './Project3.css';
 import next_icon from '../../../images/decor/next_icon.png';
+import prev_icon from '../../../images/decor/prev_icon.png';
 import bb_concept from '../../../images/project3_images/BB_concept.png';
 import laugh_gif from '../../../images/project3_images/BB_laugh.gif';
 import sad_gif from '../../../images/project3_images/BB_sad.gif';
@@ -23,6 +24,10 @@ function Project3() {
     ];
     const nextP3Image = () => {
         setCurrentIndex5((prevIndex) => (prevIndex === p3_images.length - 1 ? 0 : prevIndex + 1));
+    };
+
+    const prevP3Image = () => {
+        setCurrentIndex5((prevIndex) => (prevIndex === 0 ? p3_images.length - 1 : prevIndex - 1));
     };
     //artist credits
     const p3_art_credits = [
@@ -110,6 +115,9 @@ function Project3() {
         <div className = "p3-tab-layout">
             <button className = 'next-button' onClick= {nextP3Image}>
                 <img src = {next_icon} className = "next-icon" alt = ""/>
+            </button>
+            <button className = 'prev-button' onClick = {prevP3Image}>
+                <img src = {prev_icon} className = "prev-icon" alt = ""/>
             </button>
             <div className = "mobile-container">
                 <img src = {p3_images[currentIndex5]} className = "p3-image" alt = ""/>

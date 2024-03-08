@@ -108,6 +108,32 @@
     background-color: rgb(151, 151, 151);
 }
 
+.p2-prev-button
+{
+    position: absolute;
+    margin-top: 236px;
+    margin-left: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    z-index: 2;
+    border-radius: 5px;
+    align-items: center;
+    background-color: rgb(194, 194, 194);
+
+    box-shadow: 1.5px 1.5px #8d8d8d;
+}
+
+.p2-prev-button:hover
+{
+    background-color: rgb(172, 172, 172);
+}
+
+.p2-prev-button:active
+{
+    background-color: rgb(151, 151, 151);
+}
+
 .p2-snapshot-container
 {
     position:absolute;

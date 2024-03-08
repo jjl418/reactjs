@@ -26,7 +26,7 @@ function AboutMe() {
               GPA: 3.38
             </h1>
             <h1 className = "my-profile-content-2">
-              Languages: C++, C#, C, Java, JSX, CSS
+              Languages: C++, C#, C, Java, Javascript, CSS, HTML
               <p/>
               Proficient in: Unity, Procreate, Photoshop, Maya
               <p/>

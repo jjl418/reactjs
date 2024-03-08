@@ -24,7 +24,7 @@ function Art() {
     setCurrentIndex((prevIndex) => (prevIndex === art_images.length - 1 ? 0 : prevIndex + 1));
   };
   const prevArtImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === art_images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? art_images.length - 1 : prevIndex - 1));
   };
 
   //3D ART
@@ -37,7 +37,7 @@ function Art() {
   };
 
   const prev3DArtImage = () => {
-    setCurrentIndex1((prevIndex) => (prevIndex === threeD_art_images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex1((prevIndex) => (prevIndex === 0 ? threeD_art_images.length - 1 : prevIndex - 1));
   };
 
     return (
