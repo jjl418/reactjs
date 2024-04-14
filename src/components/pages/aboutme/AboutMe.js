@@ -2,6 +2,7 @@ import '../../../App';
 import './AboutMe.css';
 import my_face from '../../../images/about_me/me.jpg';
 import pixelheart2 from '../../../images/decor/pixelheart.png';
+import linkedinlogo from '../../../images/about_me/LI-In-Bug.png';
 // import React from 'react';
 
 function AboutMe() {
@@ -62,6 +63,10 @@ function AboutMe() {
               jlee3932@usc.edu
               <h1 className = "contact-special-text">LinkedIn:</h1> 
             </h1>
+
+            <div className = "linkedin-logo-container">
+              <img src = {linkedinlogo} className = "linkedin-logo-img" alt = ""/>
+            </div>
           </div>
         </div>
       </div>

@@ -7,6 +7,7 @@ import Projects from './components/pages/projects/Projects';
 import Art from './components/pages/art/Art';
 import Arcade from './components/pages/arcade/Arcade';
 import AboutMe from './components/pages/aboutme/AboutMe';
+import CreamistryGame from './components/pages/arcade/CreamistryGame';
 import './fonts/MS_Sans_Serif_Bold.ttf';
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path = '/art' element = {<Art/>} />
           <Route path = '/arcade' element = {<Arcade/>} />
           <Route path = '/about-me' element = {<AboutMe/>} />
-          
+          <Route path = '/creamistry' element = {<CreamistryGame/>} />
         </Routes>
       </Router>
   );

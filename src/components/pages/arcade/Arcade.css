@@ -13,3 +13,31 @@
     z-index: 0;
     height: 1000px;
 }
+
+.game-thumbnail
+{
+    display: flex;
+    justify-content:center;
+    margin-top: 43px;
+    margin-left: 43px;
+    width: 250px;
+    height: 190px;
+    background-color: aqua;
+}
+
+.game-thumbnail:hover .creamistry-thumbnail-img
+{
+    background: #eba8b992;
+}
+
+.creamistry-thumbnail-img
+{
+    /* justify-self: center; */
+    /* margin-top: 40px; */
+    width: 250px;
+    height: 190px;
+    border: solid 3px;
+}
+
+
+
