@@ -50,18 +50,31 @@
     position: absolute;
 }
 
+.thumbnail-container
+{
+    background-color: rgba(227, 140, 200, 0.553);
+    height:276px;
+    margin-left: 43px;
+    margin-right: 43px;
+    /* display: grid; */
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; */
+    margin-top: 30px;
+}
+
 .game-thumbnail
 {
     display: flex;
     justify-content:center;
-    margin-top: 43px;
     margin-left: 43px;
+    margin-top: 43px;
     width: 250px;
     height: 190px;
     border: solid 2px;
-    border-color: gray;
-    box-shadow: -2px -2px white, 2px -2px white, -2px 0px white,
-    2px 0px white, 0 -2px white, 2px 0px white, 2px 2px white, -2px 2px white, 0px 2px white;
+    border-color: rgb(53, 53, 53);
+    /* box-shadow: -2px -2px white, 2px -2px white, -2px 0px white,
+    2px 0px white, 0 -2px white, 2px 0px white, 2px 2px white, -2px 2px white, 0px 2px white; */
 }
 
 /* .game-thumbnail:hover .creamistry-thumbnail-img
@@ -78,11 +91,24 @@
     
 }
 
-.monster-thumbnail
+.monster-thumbnail-img
 {
     width: 250px;
     height: 190px;
 }
 
+.comingSoon-img
+{
+    width: 250px;
+    height: 190px;
+}
 
-
+.coming-soon-text
+{
+    font-family: MSSansSerifBold;
+    color: rgb(150, 150, 150);
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color:#0c0c0c;
+    position: absolute;
+    margin-top: 140px;
+}

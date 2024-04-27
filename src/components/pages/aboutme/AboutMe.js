@@ -3,6 +3,7 @@ import './AboutMe.css';
 import my_face from '../../../images/about_me/me.jpg';
 import pixelheart2 from '../../../images/decor/pixelheart.png';
 import linkedinlogo from '../../../images/about_me/LI-In-Bug.png';
+import githublogo from '../../../images/about_me/github-mark-white.png';
 // import React from 'react';
 
 function AboutMe() {
@@ -67,6 +68,11 @@ function AboutMe() {
             <div className = "linkedin-logo-container">
               <img src = {linkedinlogo} className = "linkedin-logo-img" alt = ""/>
             </div>
+
+            <div className = "github-logo-container">
+              <img src = {githublogo} className = "github-logo-img" alt = ""/> 
+            </div>
+            
           </div>
         </div>
       </div>

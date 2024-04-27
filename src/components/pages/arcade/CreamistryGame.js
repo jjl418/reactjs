@@ -11,10 +11,21 @@ function CreamistryGame() {
   });
   return (
     <>
-      <Unity unityProvider={unityProvider} className = "game-containter" />
-      <div className = "creamistry-note-container">
-
+      <div className = "creamistry-background">
+        <Unity unityProvider={unityProvider} className = "game-containter" />
+        <div className = "creamistry-note-container">
+          <h1 className = "creamistry-note-text">
+            Note:
+          </h1>
+          <h1 className = "creamistry-note-paragraph">
+            The game uploaded on this website is a slightly modified version
+            of the original game. The only change is that the "€" sign is 
+            replaced with a "+" sign. The reason behind this is because the euro 
+            sign does not show up on the browser when webgl is used. 
+          </h1>
+        </div>
       </div>
+      
     </>
   );
 }
