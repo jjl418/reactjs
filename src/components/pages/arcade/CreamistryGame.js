@@ -12,6 +12,9 @@ function CreamistryGame() {
   return (
     <>
       <Unity unityProvider={unityProvider} className = "game-containter" />
+      <div className = "creamistry-note-container">
+
+      </div>
     </>
   );
 }

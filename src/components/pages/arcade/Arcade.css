@@ -14,6 +14,42 @@
     height: 1000px;
 }
 
+.page-title
+{
+    font-family: MSSansSerifBold;
+    /* text-align: center; */
+    text-indent: 6%;
+    align-self: center;
+    -webkit-text-stroke-width: 1.3px;
+    -webkit-text-stroke-color:#0c0c0c;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: rgb(212, 62, 129);
+    /* background-color: rgb(159, 193, 241); */
+    background-color: rgba(227, 140, 200, 0.553);
+    width: 198px;
+    height: 50px;
+    align-content: center;
+    margin-left: 43px;
+    margin-top: 43px;
+    /* position: absolute; */
+    /* border-radius: 16px;
+    border: solid 2.5px; */
+    /* border-color: white;
+    box-shadow: -2px -2px rgb(159, 193, 241), 2px -2px rgb(159, 193, 241), -2px 0px rgb(159, 193, 241),
+    2px 0px rgb(159, 193, 241), 0 -2px rgb(159, 193, 241), 2px 0px rgb(159, 193, 241), 2px 2px rgb(159, 193, 241), 0px 2px rgb(159, 193, 241); */
+    
+}
+
+.console-img
+{
+    width: 45px;
+    height: 45px;
+    margin-left: 3px;
+    /* align-self: center; */
+    position: absolute;
+}
+
 .game-thumbnail
 {
     display: flex;
@@ -22,13 +58,16 @@
     margin-left: 43px;
     width: 250px;
     height: 190px;
-    background-color: aqua;
+    border: solid 2px;
+    border-color: gray;
+    box-shadow: -2px -2px white, 2px -2px white, -2px 0px white,
+    2px 0px white, 0 -2px white, 2px 0px white, 2px 2px white, -2px 2px white, 0px 2px white;
 }
 
-.game-thumbnail:hover .creamistry-thumbnail-img
+/* .game-thumbnail:hover .creamistry-thumbnail-img
 {
     background: #eba8b992;
-}
+} */
 
 .creamistry-thumbnail-img
 {
@@ -36,7 +75,13 @@
     /* margin-top: 40px; */
     width: 250px;
     height: 190px;
-    border: solid 3px;
+    
+}
+
+.monster-thumbnail
+{
+    width: 250px;
+    height: 190px;
 }
 
 
