@@ -10,11 +10,11 @@
     bottom:0px;
     left:0px;
     z-index: 0;
-    height: 1000px;
+    /* height: 1000px; */
     display: flex;
 }
 
-.game-containter
+.creamistry-game-containter
 {
     /* width: 1250px;
     height: 630px; */

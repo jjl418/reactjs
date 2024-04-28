@@ -1,0 +1,9 @@
+.dressup-container
+{
+    width: 40%;
+    height: 70vh;
+    background-color: gray;
+    position:fixed;
+    margin-left: 40%;
+    margin-top: 4%;
+}

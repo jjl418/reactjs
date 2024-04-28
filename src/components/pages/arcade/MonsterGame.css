@@ -10,5 +10,19 @@
     bottom:0px;
     left:0px;
     z-index: 0;
-    height: 1000px;
+    /* height: 100vh; */
+}
+
+.monster-game-containter
+{
+    /* width: 1920px;
+    height: 1080px; */
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+    border: solid 5px;
+    border-radius: 3%;
+    border-color: rgb(255, 206, 229);
 }

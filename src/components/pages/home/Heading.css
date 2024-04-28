@@ -51,21 +51,11 @@
     vertical-align: center;
 } */
 
-canvas
+/* canvas
 {
-    /* margin-left: 20; */
-    /* margin-top: 40; */
-    /* padding-top: 20%; */
-    /* background-color: antiquewhite; */
     height: 20vh;
     width: 20vh;
-    /* margin-left:20vh;
-    margin-top: 4%; */
-    /* margin-right: 20vh; */
-    /* z-index: 2;
-    position: absolute; */
-    /* background-color: rgb(255, 157, 0); */
-}
+} */
 
 @media screen and (max-width: 1020px) { 
     .message

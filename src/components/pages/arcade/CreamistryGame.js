@@ -21,7 +21,7 @@ function CreamistryGame() {
   return (
     <>
       <div className = "creamistry-background">
-        <Unity unityProvider={unityProvider} className = "game-containter" />
+        <Unity unityProvider={unityProvider} className = "creamistry-game-containter" />
         <div className = "creamistry-note-container">
           <h1 className = "creamistry-note-text">
             Note:
