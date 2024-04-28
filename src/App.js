@@ -18,7 +18,9 @@ function App() {
       //     HELLO
       //   </p>
       // </header>
+      
       <Router>
+        {/* <TabReload /> */}
         <Navbar />
         <Routes>
           {/* <Route path ='/' exact component={Home}/> */}

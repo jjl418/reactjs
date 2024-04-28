@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect }  from 'react'
 import './Navbar.css';
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 // import {Button} from './Button';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -12,6 +12,28 @@ function Navbar() {
   // mobile menu denoted as "MMenu"
   const MMenuClose = () => setClicked(false);
 
+  //NEW
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const handlePopstate = () => {
+      window.location.reload();
+    };
+
+    window.addEventListener('popstate', handlePopstate);
+
+    return () => {
+      window.removeEventListener('popstate', handlePopstate);
+    };
+  }, []);
+
+  const handleTabClick = (url) => {
+    navigate(url);
+    MMenuClose();
+    window.location.reload();
+  };
+  
+  //NEW
   // const [active, setActive] = useState(false);
   // const tabActive = () => setActive(!active);
 
@@ -38,7 +60,7 @@ function Navbar() {
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
         <nav className ="navbar"> 
             <div className = "navbar-box">
-                <Link to= "/" className = "navbar-initials">
+                <Link className = "navbar-initials" onClick={() => handleTabClick("/")}>
                   J.Lee
                 </Link>
                 {/* <div className = "navbar-logo">
@@ -53,25 +75,25 @@ function Navbar() {
                 <ul className = {clicked ? "nav-menu open" : "nav-menu closed"}>
                   {/* PROJECT LINK */}
                   <li className = "nav-menu-item">
-                    <Link to = "/projects" className = "nav-menu-link" onClick = {MMenuClose}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/projects")}>
                       <p align= "center"> Projects </p>
                     </Link>
                   </li>
                   {/* ART LINK */}
                   <li className = "nav-menu-item">
-                    <Link to = "/art" className = "nav-menu-link" onClick = {MMenuClose}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/art")}>
                       <p align= "center"> Art </p>
                     </Link>
                   </li>
                   {/* ARCADE LINK */}
                   <li className = "nav-menu-item">
-                    <Link to = "/arcade" className = "nav-menu-link" onClick = {MMenuClose}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/arcade")}>
                       <p align= "center"> Arcade </p>
                     </Link>
                   </li>
                   {/* ABOUT LINK */}
                   <li className = "nav-menu-item">
-                    <Link to = "/about-me" className = "nav-menu-about" onClick = {MMenuClose}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/about-me")}>
                       <p align= "center"> About Me </p>
                     </Link>
                   </li>

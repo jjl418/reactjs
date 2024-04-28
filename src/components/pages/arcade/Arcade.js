@@ -5,12 +5,25 @@ import creamistryThumbnail from '../../../images/arcade/creamistry-thumbnail.png
 import monsterThumnmail from '../../../images/arcade/monster-thumbnail.png';
 import pixelConsole from '../../../images/arcade/pixel-console.png';
 import comingSoon from '../../../images/arcade/coming-soon.png';
+import React from 'react';
 // import React from 'react';
 
 function Arcade() {
-    
+  // window.addEventListener('visibilitychange', () =>{
+  //   if (document.visibilityState === 'visible') window.location.reload();
+  //   else console.log('user leaves the page')
+  // })
+
+  //NEW STUFF
+  
+  // useEffect(() => {
+  //   window.location.reload();
+  // }, []);
+  //NEW STUFF
+
   return (
     <>
+    
       <div className = 'projects-background-3'>
         <h1 className = 'page-title'>Arcade
           <img src = {pixelConsole} className = "console-img" alt = ""/>

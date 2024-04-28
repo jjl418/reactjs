@@ -1,5 +1,6 @@
 import '../../../App';
 import './CreamistryGame.css';
+import React from 'react';
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 function CreamistryGame() {
@@ -9,6 +10,14 @@ function CreamistryGame() {
     frameworkUrl: "/CreamistryGameAssets/creamistry.framework.js",
     codeUrl: "/CreamistryGameAssets/creamistry.wasm",
   });
+
+  //NEW STUFF
+  
+  // useEffect(() => {
+  //   window.location.reload();
+  // }, []);
+  //NEW STUFF
+  
   return (
     <>
       <div className = "creamistry-background">
