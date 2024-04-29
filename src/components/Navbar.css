@@ -2,10 +2,12 @@ html, body { /*KEEP*/
   margin: 0;
   background:#fdb4e5;
   width: 100%;
+  /* display: flex; */
 }
 
 .navbar { /*KEEP*/
    /*DELETEEEEEEEEEEEEEE*/
+  width: 100%;
 	background: #fff;
 	filter: contrast(1);
 	--mask: linear-gradient(red, #{rgba(#000, .30)});
@@ -16,15 +18,18 @@ html, body { /*KEEP*/
     background: #0fbec1;
     display: flex;
     height: 40px;
-    position: sticky; /*may need to delete*/
-    padding:0;
-    margin:0;
+    position: fixed; 
+   
+    z-index: 5;
+    padding: none;
+    margin: none;
     border: solid 2.3px;
     border-top: #0fbec1;
     border-right: #0fbec1;
     border-left:#0fbec1;
     background-image: linear-gradient(to right, #939ed8 , #6561e9);
 
+   
     /*DELETEEEEEE*/
     &::before {
       position: absolute;
@@ -98,6 +103,7 @@ html, body { /*KEEP*/
     box-shadow: -1.5px -1.5px #000000, 2px -2px #000000, -2px 0px #000000,
     2px 0px #000000, 0 -2px #000000;
 
+    /* z-index: 5; */
     /* overflow: hidden; */
     /* white-space: nowrap; */
     

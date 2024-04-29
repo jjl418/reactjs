@@ -57,21 +57,17 @@ function Navbar() {
 
   return (
     <>
-      <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
         <nav className ="navbar"> 
             <div className = "navbar-box">
                 <Link className = "navbar-initials" onClick={() => handleTabClick("/")}>
                   J.Lee
                 </Link>
-                {/* <div className = "navbar-logo">
-                  <img src = {pixelheart2} className = "logo" alt= ""/>
-                </div> */}
+                
                 <img src = {pixelheart2} className = "logo" alt= ""/>
                 <div className = "menu-icon" onClick = {isClicked}>
                   {clicked ? <CloseIcon/> : <MenuIcon/>}
                 </div>
 
-                {/* to track menu state on mobile version  */}
                 <ul className = {clicked ? "nav-menu open" : "nav-menu closed"}>
                   {/* PROJECT LINK */}
                   <li className = "nav-menu-item">
@@ -98,8 +94,7 @@ function Navbar() {
                     </Link>
                   </li>
                 </ul>
-                {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
-                {/* <Button buttonStyle='btn--outline'>SIGN UP</Button> */}
+                
             </div>
         </nav>
     </>

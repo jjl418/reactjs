@@ -43,54 +43,55 @@ function Art() {
     return (
     <>
         <div className = "projects-background-2">
-          <div className = "art-tab">
-            <button className = {activeTab === 1 ? 'active' : ''} onClick={() => handleTabClick(1)}>
-              <h1 className = "art-tab-caption">
-                2D-art
-              </h1>
-            </button>
-            
-            <button className = {activeTab === 2 ? 'active' : ''} onClick={() => handleTabClick(2)}>
-              <h1 className = "art-tab-caption">
-                3D-art
-              </h1>
-            </button>
-          </div>
-
-
-          <div className = "art-tab-layout">
-
-            <div className = "tab-content">
-              {activeTab === 1 && 
-              <div className= "two-d-art-content">
-                <button className = 'next-button-art' onClick= {nextArtImage}>
-                  <img src = {next_icon} className = "next-icon" alt = ""/>
-                </button>
-
-                <button className = 'prev-button-art' onClick= {prevArtImage}>
-                  <img src = {prev_icon} className = "prev-icon" alt = ""/>
-                </button>
-                <div className = "art-container">
-                  <img src = {art_images[currentIndex]} className = "art-image" alt = ""/>
-                </div>
-              </div>}
-
-              {activeTab === 2 && 
-              <div className = "three-d-art-content">
-                <button className = 'next-button-art' onClick= {next3DArtImage}>
-                  <img src = {next_icon} className = "next-icon" alt = ""/>
-                </button>
-
-                <button className = 'prev-button-art' onClick= {prev3DArtImage}>
-                  <img src = {prev_icon} className = "prev-icon" alt = ""/>
-                </button>
-                <div className = "art-container">
-                  <img src = {threeD_art_images[currentIndex1]} className = "art-image" alt = ""/>
-                </div>
-                
-              </div>}
+          <div className = "art-tab-container">
+            <div className = "art-tab">
+              <button className = {activeTab === 1 ? 'active' : ''} onClick={() => handleTabClick(1)}>
+                <h1 className = "art-tab-caption">
+                  2D-art
+                </h1>
+              </button>
+              
+              <button className = {activeTab === 2 ? 'active' : ''} onClick={() => handleTabClick(2)}>
+                <h1 className = "art-tab-caption">
+                  3D-art
+                </h1>
+              </button>
             </div>
 
+
+            <div className = "art-tab-layout">
+              <div className = "tab-content">
+                {activeTab === 1 && 
+                <div className= "art-content">
+                  <button className = 'next-button-art' onClick= {nextArtImage}>
+                      <img src = {next_icon} className = "next-icon" alt = ""/>
+                  </button>
+                  
+                  <button className = 'prev-button-art' onClick= {prevArtImage}>
+                    <img src = {prev_icon} className = "prev-icon" alt = ""/>
+                  </button>
+                  
+                  <div className = "art-container">
+                    <img src = {art_images[currentIndex]} className = "art-image" alt = ""/>
+                  </div>
+                </div>}
+
+                {activeTab === 2 && 
+                <div className = "art-content">
+                  <button className = 'next-button-art' onClick= {next3DArtImage}>
+                    <img src = {next_icon} className = "next-icon" alt = ""/>
+                  </button>
+
+                  <button className = 'prev-button-art' onClick= {prev3DArtImage}>
+                    <img src = {prev_icon} className = "prev-icon" alt = ""/>
+                  </button>
+                  <div className = "art-container">
+                    <img src = {threeD_art_images[currentIndex1]} className = "art-image" alt = ""/>
+                  </div>
+                  
+                </div>}
+              </div>
+            </div>
 
           </div>
         </div>
