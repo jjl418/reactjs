@@ -160,6 +160,7 @@
     width: 100%;
     display: flex;
     overflow: hidden;
+    position:absolute;
 }
 
 .art-image
@@ -174,6 +175,7 @@
     position: absolute;
     margin-top: 0px;
     margin-left: 0px;
+    margin-right: 100px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -181,6 +183,8 @@
     border-radius: 5px;
     background-color: rgb(235, 235, 235);
     box-shadow: 2px 2px rgb(80, 99, 165);
+    align-self: center;
+    right:0;
 }
 
 .next-button-art:hover
@@ -192,7 +196,7 @@
 {
     position: absolute;
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 100px;
     width: 30px;
     height: 30px;
     display: flex;
@@ -213,7 +217,7 @@
     
     height: 350px;
     align-self: center;
-    width: 900px;
+    width: 100%;
     display: flex;
     position:absolute;
     /* background-color: pink; */
@@ -261,6 +265,7 @@
         position: absolute;
         margin-bottom: 30px;
         margin-left: 0px;
+        margin-right: 0px;
         width: 30px;
         height: 30px;
         display: flex;
@@ -269,6 +274,8 @@
         background-color: rgb(235, 235, 235);
         box-shadow: 2px 2px rgb(80, 99, 165);
         align-self: flex-end;
+        /* justify-content: center; */
+        right:auto;
     }
 
     .prev-button-art
