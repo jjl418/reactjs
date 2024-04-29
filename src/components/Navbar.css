@@ -3,6 +3,7 @@ html, body { /*KEEP*/
   background:#fdb4e5;
   width: 100%;
   /* display: flex; */
+  /* overflow: scroll */
 }
 
 .navbar { /*KEEP*/

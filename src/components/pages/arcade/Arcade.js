@@ -25,29 +25,30 @@ function Arcade() {
     <>
     
       <div className = 'projects-background-3'>
-        <h1 className = 'page-title'>Arcade
-          <img src = {pixelConsole} className = "console-img" alt = ""/>
-        </h1>
-        <div className = 'thumbnail-container'>
-          <Link to = "/creamistry" className = "game-thumbnail">
-            <img src = {creamistryThumbnail} className = "creamistry-thumbnail-img" alt = ""/>
-          </Link>
-          <Link to = "/monster-bartender" className = "game-thumbnail">
-            <img src = {monsterThumnmail} className = "monster-thumbnail-img" alt = ""/>
-          </Link>
-          <div className = "game-thumbnail">
-            <img src = {comingSoon} className = "comingSoon-img" alt = ""/> 
-            <h1 className = 'coming-soon-text'>
-              Coming Soon!
-            </h1>
+        <div className = 'arcade-layout'>
+          <h1 className = 'page-title'>Arcade
+            <img src = {pixelConsole} className = "console-img" alt = ""/>
+          </h1>
+          <div className = 'thumbnail-container'>
+            <Link to = "/creamistry" className = "game-thumbnail">
+              <img src = {creamistryThumbnail} className = "creamistry-thumbnail-img" alt = ""/>
+            </Link>
+            <Link to = "/monster-bartender" className = "game-thumbnail">
+              <img src = {monsterThumnmail} className = "monster-thumbnail-img" alt = ""/>
+            </Link>
+            <div className = "game-thumbnail">
+              <img src = {comingSoon} className = "comingSoon-img" alt = ""/> 
+              <h1 className = 'coming-soon-text'>
+                Coming Soon!
+              </h1>
+            </div>
+            <div className = "game-thumbnail">
+              <img src = {comingSoon} className = "comingSoon-img" alt = ""/> 
+              <h1 className = 'coming-soon-text'>
+                Coming Soon!
+              </h1>
+            </div>
           </div>
-          <div className = "game-thumbnail">
-            <img src = {comingSoon} className = "comingSoon-img" alt = ""/> 
-            <h1 className = 'coming-soon-text'>
-              Coming Soon!
-            </h1>
-          </div>
-          
         </div>
         
       </div>
