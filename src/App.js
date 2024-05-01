@@ -25,7 +25,7 @@ function App() {
         <Routes>
           {/* <Route path ='/' exact component={Home}/> */}
           <Route path = '/reactjs' element={<Home/>} />
-          <Route path = '/projects' element = {<Projects/>} />
+          <Route path = 'reactjs/projects' element = {<Projects/>} />
           <Route path = '/art' element = {<Art/>} />
           <Route path = '/arcade' element = {<Arcade/>} />
           <Route path = '/about-me' element = {<AboutMe/>} />
