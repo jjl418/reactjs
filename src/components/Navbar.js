@@ -59,7 +59,7 @@ function Navbar() {
     <>
         <nav className ="navbar"> 
             <div className = "navbar-box">
-                <Link className = "navbar-initials" onClick={() => handleTabClick("/")}>
+                <Link className = "navbar-initials" onClick={() => handleTabClick("/reactjs")}>
                   J.Lee
                 </Link>
                 
