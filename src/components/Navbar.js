@@ -71,7 +71,7 @@ function Navbar() {
                 <ul className = {clicked ? "nav-menu open" : "nav-menu closed"}>
                   {/* PROJECT LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/projects")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/projects")}>
                       <p align= "center"> Projects </p>
                     </Link>
                   </li>
