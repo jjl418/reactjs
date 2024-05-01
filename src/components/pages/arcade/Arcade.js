@@ -30,10 +30,10 @@ function Arcade() {
             <img src = {pixelConsole} className = "console-img" alt = ""/>
           </h1>
           <div className = 'thumbnail-container'>
-            <Link to = "/reactjs/creamistry" className = "game-thumbnail">
+            <Link to = "/creamistry" className = "game-thumbnail">
               <img src = {creamistryThumbnail} className = "creamistry-thumbnail-img" alt = ""/>
             </Link>
-            <Link to = "/reactjs/monster-bartender" className = "game-thumbnail">
+            <Link to = "/monster-bartender" className = "game-thumbnail">
               <img src = {monsterThumnmail} className = "monster-thumbnail-img" alt = ""/>
             </Link>
             <div className = "game-thumbnail">

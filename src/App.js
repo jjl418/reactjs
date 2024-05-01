@@ -24,13 +24,13 @@ function App() {
         <Navbar />
         <Routes>
           {/* <Route path ='/' exact component={Home}/> */}
-          <Route path = '/reactjs' element={<Home/>} />
-          <Route path = '/reactjs/projects' element = {<Projects/>} />
-          <Route path = '/reactjs/art' element = {<Art/>} />
-          <Route path = '/reactjs/arcade' element = {<Arcade/>} />
-          <Route path = '/reactjs/about-me' element = {<AboutMe/>} />
-          <Route path = '/reactjs/creamistry' element = {<CreamistryGame/>} />
-          <Route path = '/reactjs/monster-bartender' element = {<MonsterGame/>} />
+          <Route path = '/' element={<Home/>} />
+          <Route path = '/projects' element = {<Projects/>} />
+          <Route path = '/art' element = {<Art/>} />
+          <Route path = '/arcade' element = {<Arcade/>} />
+          <Route path = '/about-me' element = {<AboutMe/>} />
+          <Route path = '/creamistry' element = {<CreamistryGame/>} />
+          <Route path = '/monster-bartender' element = {<MonsterGame/>} />
         </Routes>
       </Router>
   );
