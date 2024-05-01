@@ -2,8 +2,11 @@ html, body { /*KEEP*/
   margin: 0;
   background:#fdb4e5;
   width: 100%;
+  /* overflow: hidden; */
   /* display: flex; */
   /* overflow: scroll */
+  
+  
 }
 
 .navbar { /*KEEP*/
@@ -181,8 +184,8 @@ html, body { /*KEEP*/
       /* transition: all 0.5s ease; */
       margin: none;
       border: none;
-      /* background-image: linear-gradient(#a5a3fc , rgb(255, 141, 225)); */
-      background-color: rgb(240, 182, 215);
+      background-image: linear-gradient(#a5a3fc , rgb(255, 141, 225));
+      /* background-color: rgb(175, 158, 253); */
       justify-content: center;
       display: flex;
       justify-self: center;

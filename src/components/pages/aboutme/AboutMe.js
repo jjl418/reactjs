@@ -4,13 +4,16 @@ import my_face from '../../../images/about_me/me.jpg';
 import pixelheart2 from '../../../images/decor/pixelheart.png';
 import linkedinlogo from '../../../images/about_me/LI-In-Bug.png';
 import githublogo from '../../../images/about_me/github-mark-white.png';
+// import React, { useState, useEffect } from 'react';
+
 // import React from 'react';
 
 function AboutMe() {
-    
+  
   return (
     <>
-      <div className = 'projects-background-4'>
+      
+      <div className = 'about-me-background'>
         <div className = 'my-profile-container'>
           <div className = 'my-id-card'> 
             <img src = {my_face} className = 'my-id-image' alt = ""/>
@@ -65,13 +68,13 @@ function AboutMe() {
               <h1 className = "contact-special-text">LinkedIn:</h1> 
             </h1>
 
-            <div className = "linkedin-logo-container">
+            <a href = "https://www.linkedin.com/in/julianne-l-ab93451bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className = "linkedin-logo-container">
               <img src = {linkedinlogo} className = "linkedin-logo-img" alt = ""/>
-            </div>
+            </a>
 
-            <div className = "github-logo-container">
+            <a href = "https://github.com/jjl418?tab=overview&from=2024-03-01&to=2024-03-31" className = "github-logo-container">
               <img src = {githublogo} className = "github-logo-img" alt = ""/> 
-            </div>
+            </a>
             
           </div>
         </div>

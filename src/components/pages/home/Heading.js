@@ -17,7 +17,7 @@ function Heading() {
         <div className= "home-background">
             <div className= "message">
                 <h1>
-                    <span style = {{fontWeight: 'bold', color: 'white'}}>
+                    <span style = {{fontWeight: 'bold'}}>
                         {text}
                     </span>
                     <span style = {{color: 'white'}}>
