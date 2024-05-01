@@ -77,19 +77,19 @@ function Navbar() {
                   </li>
                   {/* ART LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/art")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/art")}>
                       <p align= "center"> Art </p>
                     </Link>
                   </li>
                   {/* ARCADE LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/arcade")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/arcade")}>
                       <p align= "center"> Arcade </p>
                     </Link>
                   </li>
                   {/* ABOUT LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/about-me")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/about-me")}>
                       <p align= "center"> About Me </p>
                     </Link>
                   </li>
