@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactjs/static/css/main.f1459460.css",
-    "main.js": "/reactjs/static/js/main.07956863.js",
+    "main.js": "/reactjs/static/js/main.068ee50e.js",
     "static/media/Monster_Bartender_demo.mp4": "/reactjs/static/media/Monster_Bartender_demo.7666c9db364d4e64edd0.mp4",
     "static/media/BB_demo.mp4": "/reactjs/static/media/BB_demo.433d908694a55eccd5c0.mp4",
     "static/media/Trivia-game_demo.mp4": "/reactjs/static/media/Trivia-game_demo.1cca67d969e141428a21.mp4",
@@ -86,10 +86,10 @@
     "static/media/pixel-console.png": "/reactjs/static/media/pixel-console.de815dc9fbe8ce2a9a4a.png",
     "index.html": "/reactjs/index.html",
     "main.f1459460.css.map": "/reactjs/static/css/main.f1459460.css.map",
-    "main.07956863.js.map": "/reactjs/static/js/main.07956863.js.map"
+    "main.068ee50e.js.map": "/reactjs/static/js/main.068ee50e.js.map"
   },
   "entrypoints": [
     "static/css/main.f1459460.css",
-    "static/js/main.07956863.js"
+    "static/js/main.068ee50e.js"
   ]
 }
