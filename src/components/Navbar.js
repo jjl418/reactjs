@@ -59,7 +59,7 @@ function Navbar() {
     <>
         <nav className ="navbar"> 
             <div className = "navbar-box">
-                <Link className = "navbar-initials" onClick={() => handleTabClick("/reactjs")}>
+                <Link className = "navbar-initials" onClick={() => handleTabClick("/")}>
                   J.Lee
                 </Link>
                 
@@ -71,25 +71,25 @@ function Navbar() {
                 <ul className = {clicked ? "nav-menu open" : "nav-menu closed"}>
                   {/* PROJECT LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/projects")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/projects")}>
                       <p align= "center"> Projects </p>
                     </Link>
                   </li>
                   {/* ART LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/art")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/art")}>
                       <p align= "center"> Art </p>
                     </Link>
                   </li>
                   {/* ARCADE LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/arcade")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/arcade")}>
                       <p align= "center"> Arcade </p>
                     </Link>
                   </li>
                   {/* ABOUT LINK */}
                   <li className = "nav-menu-item">
-                    <Link className = "nav-menu-link" onClick={() => handleTabClick("reactjs/about-me")}>
+                    <Link className = "nav-menu-link" onClick={() => handleTabClick("/about-me")}>
                       <p align= "center"> About Me </p>
                     </Link>
                   </li>

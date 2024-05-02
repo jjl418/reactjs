@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { HashRouterrRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/pages/home/Home';
 import Projects from './components/pages/projects/Projects';
@@ -24,13 +24,13 @@ function App() {
         <Navbar />
         <Routes>
           {/* <Route path ='/' exact component={Home}/> */}
-          <Route path = '/reactjs' element={<Home/>} />
-          <Route path = 'reactjs/projects' element = {<Projects/>} />
-          <Route path = 'reactjs/art' element = {<Art/>} />
-          <Route path = 'reactjs/arcade' element = {<Arcade/>} />
-          <Route path = 'reactjs/about-me' element = {<AboutMe/>} />
-          <Route path = 'reactjs/creamistry' element = {<CreamistryGame/>} />
-          <Route path = 'reactjs/monster-bartender' element = {<MonsterGame/>} />
+          <Route path = '/' element={<Home/>} />
+          <Route path = '/projects' element = {<Projects/>} />
+          <Route path = '/art' element = {<Art/>} />
+          <Route path = '/arcade' element = {<Arcade/>} />
+          <Route path = '/about-me' element = {<AboutMe/>} />
+          <Route path = '/creamistry' element = {<CreamistryGame/>} />
+          <Route path = '/monster-bartender' element = {<MonsterGame/>} />
         </Routes>
       </Router>
   );
