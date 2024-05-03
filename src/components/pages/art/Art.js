@@ -28,17 +28,17 @@ function Art() {
   };
 
   //3D ART
-  const [currentIndex1, setCurrentIndex1] = useState(0); //index for p1_images list
+  const [currentIndex1] = useState(0); 
   const threeD_art_images = [
     require('../../../images/art_images/room.png'),
   ];
-  const next3DArtImage = () => {
-    setCurrentIndex1((prevIndex) => (prevIndex === threeD_art_images.length - 1 ? 0 : prevIndex + 1));
-  };
+  // const next3DArtImage = () => {
+  //   setCurrentIndex1((prevIndex) => (prevIndex === threeD_art_images.length - 1 ? 0 : prevIndex + 1));
+  // };
 
-  const prev3DArtImage = () => {
-    setCurrentIndex1((prevIndex) => (prevIndex === 0 ? threeD_art_images.length - 1 : prevIndex - 1));
-  };
+  // const prev3DArtImage = () => {
+  //   setCurrentIndex1((prevIndex) => (prevIndex === 0 ? threeD_art_images.length - 1 : prevIndex - 1));
+  // };
 
     return (
     <>
@@ -78,13 +78,13 @@ function Art() {
 
                 {activeTab === 2 && 
                 <div className = "art-content">
-                  <button className = 'next-button-art' onClick= {next3DArtImage}>
+                  {/* <button className = 'next-button-art' onClick= {next3DArtImage}>
                     <img src = {next_icon} className = "next-icon" alt = ""/>
                   </button>
 
                   <button className = 'prev-button-art' onClick= {prev3DArtImage}>
                     <img src = {prev_icon} className = "prev-icon" alt = ""/>
-                  </button>
+                  </button> */}
                   <div className = "art-container">
                     <img src = {threeD_art_images[currentIndex1]} className = "art-image" alt = ""/>
                   </div>
