@@ -70,7 +70,7 @@ html, body { /*KEEP*/
     margin-left: 20px;
     text-decoration: none;
     width: 90px;
-    background-color:red;
+    /* background-color:red; */
   }
 
   .logo
@@ -79,7 +79,7 @@ html, body { /*KEEP*/
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    background-color: #6561e9;
+    /* background-color: #6561e9; */
     
   }
 

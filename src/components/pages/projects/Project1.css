@@ -83,22 +83,18 @@
 
 }
 
-.p1-caption-container
+.p1-caption
 {
     display: flex;
     position: absolute;
     height: 34px;
-    width: 250px;
+    /* width: 250px; */
     justify-self: start;
     justify-content: center;
     align-items: center;
     /* background-color: #6342bb3a; */
     margin-left: 4px;
     margin-top: 2px;
-}
-
-.p1-caption
-{
     font-family: "MSSansSerifBold";
     font-size: 1.5rem;
     font-weight: bold;
@@ -489,7 +485,8 @@
 .characters-box-description
 {
     display: flex;
-    margin-top: 220px;
+    margin-top: 240px;
+    margin-bottom: 20px;
     background-color:#cacaca;
     /* height: 60px; */
     width: 288px;

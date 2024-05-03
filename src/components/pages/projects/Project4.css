@@ -59,6 +59,7 @@
     border-radius: 2;
     box-shadow: 2px 2px #000000, -2px 2px #000000, -2px 0px #000000,
     2px 0px #000000, 0 2px #000000, -2px -2px #000000, 2px -2px #000000;
+    margin-bottom: 20px;
 }
 
 .p4-image
@@ -191,7 +192,7 @@
     margin-top: 3.5px;
     display: flex;
     /* width: 160px; */
-    height: 33px;
+    height: 30px;
     border-radius: 5px;
     border-style: solid;
     background-color: #81BBBF;
@@ -213,7 +214,7 @@
     position: absolute;
     background-color: #81BBBF;
     display: flex;
-    margin-top: 68px;
+    margin-top: 58px;
     margin-left: 17px;
     padding-top: 0px;
     padding-bottom: 0px;

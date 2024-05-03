@@ -108,11 +108,9 @@ function Project1() {
 
 
             <div className = "p1-tab-container">
-                <div className = "p1-caption-container">
-                    <h1 className = "p1-caption">
-                        Project 1: Creamistry
-                    </h1>
-                </div>
+                <h1 className = "p1-caption">
+                    Project 1: Creamistry
+                </h1>
             </div>
 
             <div className = "p1-tab-layout">
