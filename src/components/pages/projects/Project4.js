@@ -66,8 +66,7 @@ function Project4() {
                 <h1 className = "p4-explanation-text">
                     <h1 className = "p1-credits-role">Engineer:</h1> 
                     <h1 className = "my-name">Julianne Lee</h1>
-                    My role as an engineer was to code the backend portion of the
-                    trivia game. I was also in charge of making the UI for the game and the 
+                    I coded the backend of the game. I was also in charge of making the UI for the game and the 
                     frontend part of the website. Some UI changes I made were adding 
                     color to indicate what questions players answered correct or wrong. 
                     I also styled the UI buttons. 

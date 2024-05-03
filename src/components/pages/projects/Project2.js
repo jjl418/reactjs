@@ -89,8 +89,8 @@ function Project2() {
                             Notes
                         </h1>
                         <div className = "p2-notes-text">
-                            Monster Bartender was a in-class project assignment.
-                            Our class teamed up with Berklee Music students to 
+                            This game was an in-class project assignment.
+                            We teamed up with Berklee music students to 
                             create this game.
                             <p/>
                             <h1 className = "p2-notes-special-text">Course Name:</h1> 
