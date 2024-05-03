@@ -11,6 +11,7 @@
     height: 40px;
     /* background-image: linear-gradient(to right, #adcbf3 , #7f98fb); */
     background-image: linear-gradient(to right, #90bfe6 , #6076d1);
+    position: absolute;
     margin-top: 30px;
     margin-left: 30px;
     display: flex;

@@ -70,13 +70,16 @@ html, body { /*KEEP*/
     margin-left: 20px;
     text-decoration: none;
     width: 90px;
+    background-color:red;
   }
 
   .logo
   {
+    /* position: sticky; */
     width: 40px;
     height: 40px;
-    margin-right: 200px;
+    margin-left: 5px;
+    background-color: #6561e9;
     
   }
 
