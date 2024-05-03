@@ -21,7 +21,7 @@
 	/* --mask: linear-gradient(red, #{rgba(#000, .30)}); */
     /*DELETEEEEEEEEEEEEEE*/
 
-    width: 700px;
+    width: 720px;
     height: 408px;
     background-image: linear-gradient(to right, #d36bca , #cb4bc5);
     margin-top: 70px;
@@ -112,10 +112,10 @@
 .my-profile-content-2
 {
     width: 320px;
-    height: 68px;
+    /* height: 68px; */
     margin-top: 130px;
     margin-left: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
     position: absolute;
     font-size: 0.92rem;
     color:#424242;
@@ -182,7 +182,8 @@
     margin-left: 8px;
     margin-top: 42px;
     /* background-color: #dd5d5d; */
-    height: 70px;
+    /* height: 70px; */
+    margin-bottom: 8px;
     width: 646px;
 }
 
