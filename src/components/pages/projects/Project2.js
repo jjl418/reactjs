@@ -73,9 +73,9 @@ function Project2() {
                         </h1>
                         <h1 className = "p2-explanation-text">
                             Monster Bartender is a 2.5D, horror, restaurant serving game.
-                            Your job is to serve the correct drink to each customer before they run out patience
-                            and kill you. Choosing the wrong speech bubbles can upset the customer,
-                            resulting in death. You can use a recipe book to 
+                            Your job must serve the correct drink to each customer before they run out patience
+                            and kill you. Choosing the wrong speech bubbles will cause the
+                            customer to kill you. Use the recipe book to 
                             help aid you, but staring too long will summon a book demon.
                         </h1>
                     </div>
