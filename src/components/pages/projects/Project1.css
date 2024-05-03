@@ -330,7 +330,7 @@
     -webkit-text-stroke-color: #4f4f4f;
     color: #444444;
     height: 25px;
-    width: 120px;
+    /* width: 120px; */
     border: solid 2.2px;
     border-color:#909090;
     padding-left: 5px;
@@ -488,6 +488,7 @@
 
 .characters-box-description
 {
+    display: flex;
     margin-top: 220px;
     background-color:#cacaca;
     height: 60px;
@@ -544,21 +545,30 @@
     width: 638px;
 }
 
-.p1-explanation-box
+.p1-explanation-caption
 {
     margin-left: 4px;
     margin-top: 3.5px;
     display: flex;
-    width: 230px;
-    height: 33px;
+    /* width: 230px; */
+    height: 30px;
     border-radius: 5px;
     border-style: solid;
     background-color: #6342bb3a;
     border-width: 2px;
     border-color:#584fcd52;
+    
+    font-family: "MSSansSerifBold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color:#000000;
+    /* margin-left: 8px;
+    margin-top: 4px; */
 }
 
-.p1-explanation-caption
+/* .p1-explanation-caption
 {
     font-family: "MSSansSerifBold";
     font-size: 1.5rem;
@@ -568,7 +578,7 @@
     -webkit-text-stroke-color:#000000;
     margin-left: 8px;
     margin-top: 4px;
-}
+} */
 
 .p1-demo-container
 {
@@ -585,30 +595,25 @@
     display: flex;
 }
 
-.p1-demo-box
+.p1-demo-caption
 {
     margin-left: 4px;
     margin-top: 3.5px;
     display: flex;
-    width: 160px;
-    height: 33px;
+    /* width: 160px; */
+    height: 30px;
     border-radius: 5px;
     border-style: solid;
     background-color: #6342bb3a;
     border-width: 2px;
     border-color:#584fcd52;
-}
 
-.p1-demo-caption
-{
     font-family: "MSSansSerifBold";
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color:#000000;
-    margin-left: 8px;
-    margin-top: 4px;
 }
 
 .p1-demo-video-box
@@ -644,31 +649,27 @@
     display: flex;
 }
 
-.p1-credits-box
+.p1-credits-caption
 {
     margin-left: 5px;
     margin-top: 3.5px;
     display: flex;
-    width: 98px;
-    height: 33px;
+    /* width: 98px; */
+    height: 30px;
     border-radius: 5px;
     border-style: solid;
     background-color: #6342bb3a;
     border-width: 2px;
     border-color:#584fcd52;
-}
 
-.p1-credits-caption
-{
     font-family: "MSSansSerifBold";
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color:#000000;
-    margin-left: 8px;
-    margin-top: 4px;
 }
+
 
 .p1-credits-caption-text
 {

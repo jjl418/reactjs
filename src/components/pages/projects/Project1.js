@@ -65,28 +65,24 @@ function Project1() {
                         Beware, customers do not speak the same language as you so you will
                         need to translate their order using a translation book.
                     </h1>
-                    <div className = "p1-explanation-box">
-                        <h1 className = "p1-explanation-caption">
-                            Game Explanation
-                        </h1>
-                    </div>
+                    
+                <h1 className = "p1-explanation-caption">
+                    Game Explanation
+                </h1>
+                    
                 </div>
             
                 <div className = "p1-demo-container">
-                    <div className = "p1-demo-box">
-                        <h1 className = "p1-demo-caption">
-                            Demo Video
-                        </h1>
-                    </div>
+                    <h1 className = "p1-demo-caption">
+                         Demo Video
+                    </h1>
                     <video src={p1_video} className = "p1-demo-video-box" width="200" height="350" controls="controls" autoplay= {false} />
                 </div>
 
                 <div className = "p1-credits-container">
-                    <div className = "p1-credits-box">
-                        <h1 className = "p1-credits-caption">
-                            Credits
-                        </h1>
-                    </div>
+                    <h1 className = "p1-credits-caption">
+                        Credits
+                    </h1>
                     <h1 className = "p1-credits-caption-text">
                         <h1 className = "p1-credits-role">Artist:</h1> 
                         <h1 className = "my-name">Julianne Lee</h1>
