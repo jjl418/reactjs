@@ -72,7 +72,7 @@ function Project2() {
                             Game Explanation
                         </h1>
                         <h1 className = "p2-explanation-text">
-                            Monster Bartender is a 2.5D, singleplayer, horror, restaurant serving game.
+                            Monster Bartender is a 2.5D, horror, restaurant serving game.
                             Your job is to serve the correct drink to each customer before they run out patience
                             and kill you. Choosing the wrong speech bubbles can upset the customer,
                             resulting in death. You can use a recipe book to 
@@ -132,7 +132,7 @@ function Project2() {
                             <h1 className = "p1-credits-role">Made with:</h1>
                             Unity
                             <p/>
-                            <h1 className = "p1-credits-role">Art Softwares:</h1>
+                            {/* <h1 className = "p1-credits-role">Art Softwares:</h1> */}
                             Procreate
                             <p/>
                         </h1>
