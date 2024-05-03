@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactjs/static/css/main.fe093fd3.css",
-    "main.js": "/reactjs/static/js/main.e7c53101.js",
+    "main.css": "/reactjs/static/css/main.477493a9.css",
+    "main.js": "/reactjs/static/js/main.422e0b4f.js",
     "static/media/Monster_Bartender_demo.mp4": "/reactjs/static/media/Monster_Bartender_demo.7666c9db364d4e64edd0.mp4",
     "static/media/BB_demo.mp4": "/reactjs/static/media/BB_demo.433d908694a55eccd5c0.mp4",
     "static/media/Trivia-game_demo.mp4": "/reactjs/static/media/Trivia-game_demo.1cca67d969e141428a21.mp4",
@@ -85,11 +85,11 @@
     "static/media/MS_Sans_Serif_Bold.ttf": "/reactjs/static/media/MS_Sans_Serif_Bold.d8e6bbaabc2eee1f8484.ttf",
     "static/media/pixel-console.png": "/reactjs/static/media/pixel-console.de815dc9fbe8ce2a9a4a.png",
     "index.html": "/reactjs/index.html",
-    "main.fe093fd3.css.map": "/reactjs/static/css/main.fe093fd3.css.map",
-    "main.e7c53101.js.map": "/reactjs/static/js/main.e7c53101.js.map"
+    "main.477493a9.css.map": "/reactjs/static/css/main.477493a9.css.map",
+    "main.422e0b4f.js.map": "/reactjs/static/js/main.422e0b4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe093fd3.css",
-    "static/js/main.e7c53101.js"
+    "static/css/main.477493a9.css",
+    "static/js/main.422e0b4f.js"
   ]
 }
