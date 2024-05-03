@@ -3,8 +3,8 @@
     /* position: relative; */
     /*DELETEEEEEEEEEEEEEE*/
 	background: #fff;
-	filter: contrast(1);
-	--mask: linear-gradient(red, #{rgba(#000, .30)});
+	/* filter: contrast(1);
+	--mask: linear-gradient(red, #{rgba(#000, .30)}); */
     /*DELETEEEEEEEEEEEEEE*/
 
     width: 660px;
@@ -28,7 +28,7 @@
     2px 0px #000000, 0 -2px #000000, 2px 0px #000000, 2px 2px #000000, 0px 2px #000000;
 
     /*DELETEEEEEE*/
-    &::before {
+    /* &::before {
 		position: absolute;
 		top: 0; right: 0; bottom: 0; left: 0;
 		background: 
@@ -36,7 +36,7 @@
 		-webkit-mask: var(--mask);
 				mask: var(--mask);
 		content: '';
-	}
+	} */
     /*DELETEEEEEE*/
 }
 
@@ -491,7 +491,7 @@
     display: flex;
     margin-top: 220px;
     background-color:#cacaca;
-    height: 60px;
+    /* height: 60px; */
     width: 288px;
     font-family: MSSansSerif;
     position: absolute;
@@ -499,6 +499,7 @@
     color:#424242;
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 1px;
     padding-right: 4px;
     border: solid 2.2px;

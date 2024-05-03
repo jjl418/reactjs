@@ -52,28 +52,22 @@ function Project3() {
                     virtual bombs scattered across your room, answering trivia questions
                     with a friend, and tracing provided shapes using the tip of your nose.
                 </h1>
-                <div className = "p3-explanation-box">
-                    <h1 className = "p1-explanation-caption">
-                        Game Explanation
-                    </h1>
-                </div>
+                <h1 className = "p3-explanation-caption">
+                    Game Explanation
+                </h1>
             </div>
 
             <div className = "p3-demo-container">
-                <div className = "p3-demo-box">
-                    <h1 className = "p1-demo-caption">
-                        Demo Video
-                    </h1>
+                <div className = "p3-demo-caption">
+                    Demo Video
                 </div>
                 <video src={p3_video} className = "p3-demo-video-box" width="350" height="200" controls="controls" autoplay= {false} />
             </div>
 
             <div className = "p3-qr-container">
-                <div className = "p3-qr-box">
-                    <h1 className = "p1-demo-caption">
-                        QR Code
-                    </h1>
-                </div>
+                <h1 className = "p3-qr-caption">
+                    QR Code
+                </h1>
                 <img src = {qr_image} className = "qr-image" alt = ""/>
 
                 <div className= "bb-link">
@@ -85,11 +79,9 @@ function Project3() {
             </div>
 
             <div className = "p3-credits-container">
-                <div className = "p3-credits-box">
-                    <h1 className = "p1-credits-caption">
-                        My Role
-                    </h1>
-                </div>
+                <h1 className = "p3-credits-caption">
+                    My Role
+                </h1>
 
                 <h1 className = "p3-credits-caption-text">
                     <h1 className = "p1-credits-role">Art Director:</h1> 

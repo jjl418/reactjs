@@ -110,21 +110,17 @@ function Project4() {
             </div>
 
             <div className = "p4-demo-container">
-                <div className = "p4-demo-box">
-                    <h1 className = "p1-demo-caption">
-                        Demo Video
-                    </h1>
-                </div>
+                <h1 className = "p4-demo-caption">
+                    Demo Video
+                </h1>
                 <video src={p4_video} className = "p4-demo-video-box" controls="controls" autoplay= {false} />
 
-                <div className = "p4-resources-box">
-                    <h1 className = "p1-demo-caption">
-                        Resources
-                    </h1>
+                <div className = "p4-resources-caption">
+                    Resources
                 </div>
 
                 <h1 className = "p4-resources-text">
-                    <h1 className = "p1-credits-role">Repository:</h1> 
+                    <h1 className = "p4-special-text">Repository:</h1> 
                     <p/>
                     <div className= "resource-link">
                         <a href="https://github.com/yashvijaju/trivia-game">
@@ -132,9 +128,7 @@ function Project4() {
                         </a>
                     </div>
                     <p/>
-                    <div className = "documentation-box">
-                        <h1 className = "p1-credits-role">Documentation:</h1> 
-                    </div>
+                    <h1 className = "p4-special-text-2">Documentation:</h1> 
                     <div className = "technical-button-align">
                         <a href="/Technical Specifications.pdf" download className= "documentation-button">
                             Technical Specification

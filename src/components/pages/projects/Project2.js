@@ -60,21 +60,17 @@ function Project2() {
                 </button>
             
                 <div className = "p2-snapshot-container">
-                    <div className = "p2-snapshot-caption-container">
-                        <h1 className = "p2-snapshot-caption">
-                            Game Snapshots
-                        </h1>
-                    </div>
+                    <h1 className = "p2-snapshot-caption">
+                        Game Snapshots
+                    </h1>
                     <img src = {p2_images[currentIndex3]} className = "p2-image" alt = ""/>
                 </div>
             
                 <div className = "p2-game-explanation-container">
                     <div className = "p2-game-explanation-box">
-                        <div className = "p2-explanation-caption-box">
-                            <h1 className = "p1-explanation-caption">
-                                Game Explanation
-                            </h1>
-                        </div>
+                        <h1 className = "p2-explanation-caption">
+                            Game Explanation
+                        </h1>
                         <h1 className = "p2-explanation-text">
                             Monster Bartender is a 2.5D, singleplayer, horror, restaurant serving game.
                             Your job is to serve the correct drink to each customer before they run out patience
@@ -85,17 +81,13 @@ function Project2() {
                     </div>
 
                     <div className = "p2-demo-box">
-                        <div className = "p2-demo-caption-box">
-                            <h1 className = "p1-demo-caption">
-                                Demo Video
-                            </h1>
-                        </div>
+                        <h1 className = "p2-demo-caption">
+                            Demo Video
+                        </h1>
                         <video src={p2_video} className = "p2-demo-video-box" width="320" height="180" controls="controls" autoplay= {false} />
-                        <div className= "p2-notes-caption-box">
-                            <h1 className = "p2-notes-caption">
-                                Notes
-                            </h1>
-                        </div>
+                        <h1 className = "p2-notes-caption">
+                            Notes
+                        </h1>
                         <div className = "p2-notes-text">
                             Monster Bartender was a in-class project assignment.
                             Our class teamed up with Berklee Music students to 
@@ -110,11 +102,9 @@ function Project2() {
                     </div>
 
                     <div className = "p2-credits-box">
-                        <div className= "p2-credits-caption-box">
-                            <h1 className = "p2-credits-caption">
-                                Credits
-                            </h1>
-                        </div>
+                        <h1 className = "p2-credits-caption">
+                            Credits
+                        </h1>
                         <h1 className = "p2-credits-caption-text">
                             <h1 className = "p1-credits-role">Artist:</h1> 
                             <h1 className = "my-name">Julianne Lee</h1>
@@ -150,16 +140,17 @@ function Project2() {
                 </div>
           
                 <div className = "p2-character-containers">
-                    <div className = "p2-character-caption-box">
-                        <h1 className = "p2-character-caption">
-                            Characters
-                        </h1>
-                    </div>
+                    <h1 className = "p2-character-caption">
+                        Characters
+                    </h1>
                     <div className = "p2-animation-caption-box">
                         <h1 className = "p2-animation-caption">
                             Killing Animations
                         </h1>
                     </div>
+                    <h1 className = "p2-animation-caption">
+                        Killing Animations
+                    </h1>
                     <div className = "character-button-container">
                         <button className = "chad-button" onClick = {() => changeCharacters(0)}>
                             <img src = {chad_thumbnail} className = "chad-thumbnail" alt = ""/>
