@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/reactjs/static/css/main.f757e5d2.css",
+    "main.css": "/reactjs/static/css/main.fe093fd3.css",
     "main.js": "/reactjs/static/js/main.e7c53101.js",
     "static/media/Monster_Bartender_demo.mp4": "/reactjs/static/media/Monster_Bartender_demo.7666c9db364d4e64edd0.mp4",
     "static/media/BB_demo.mp4": "/reactjs/static/media/BB_demo.433d908694a55eccd5c0.mp4",
@@ -85,11 +85,11 @@
     "static/media/MS_Sans_Serif_Bold.ttf": "/reactjs/static/media/MS_Sans_Serif_Bold.d8e6bbaabc2eee1f8484.ttf",
     "static/media/pixel-console.png": "/reactjs/static/media/pixel-console.de815dc9fbe8ce2a9a4a.png",
     "index.html": "/reactjs/index.html",
-    "main.f757e5d2.css.map": "/reactjs/static/css/main.f757e5d2.css.map",
+    "main.fe093fd3.css.map": "/reactjs/static/css/main.fe093fd3.css.map",
     "main.e7c53101.js.map": "/reactjs/static/js/main.e7c53101.js.map"
   },
   "entrypoints": [
-    "static/css/main.f757e5d2.css",
+    "static/css/main.fe093fd3.css",
     "static/js/main.e7c53101.js"
   ]
 }
