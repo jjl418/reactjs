@@ -45,8 +45,8 @@ function Project3() {
         <div className = "p3-tab-container-2">
             <div className = "p3-explanation-container">
                 <h1 className = "p1-explanation-text">
-                    Bomb Buddies is a mobile, Jackbox party-esque, co-op game with 
-                    a series of AR-based mini games. The premise of the game is that
+                    Bomb Buddies is a AR, mobile, Jackbox party-esque, co-op game. 
+                    The premise of the game is that
                     a hacker forces you and your friends to play a series of mini games 
                     so your phone does not "explode". Some mini games include: defusing 
                     virtual bombs scattered across your room, answering trivia questions

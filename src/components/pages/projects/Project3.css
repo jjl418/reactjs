@@ -373,8 +373,10 @@
     align-content: center;
     text-align: center;
     height: 26px;
-    width: 120px;
+    /* width: 120px; */
     padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
     text-decoration: none;
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color:#000000;
