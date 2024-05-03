@@ -41,11 +41,9 @@ function AboutMe() {
           </div>
 
           <div className = "more-info-container">
-            <div className = "more-info-caption-box">
-              <h1 className = "more-info-caption">
+            <h1 className = "more-info-caption">
                 About Me
-              </h1>
-            </div>
+            </h1>
             
             <h1 className = "more-info-text">
               Hi, I'm Julianne Lee and I am an aspiring game developer
@@ -55,11 +53,9 @@ function AboutMe() {
           </div>
 
           <div className = "contact-container">
-            <div className = "contact-caption-box">
-              <h1 className = "more-info-caption">
-                Contact Info
-              </h1>
-            </div>
+            <h1 className = "more-info-caption">
+              Contact Info
+            </h1>
             <h1 className = "contact-info-text">
               <h1 className = "contact-special-text">Email: </h1> 
               juliannejisulee@gmail.com
