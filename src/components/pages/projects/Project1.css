@@ -179,10 +179,10 @@
 .profile-name
 {
     /* font-family: "MSSansSerifBold"; */
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     height: 30px;
-    width: 80px;
+    /* width: 80px; */
     text-align: start;
     margin-left: 18px;
     margin-top: 3px;
@@ -204,7 +204,7 @@
     margin-top: 35px;
     margin-left: 143px;
     position: absolute;
-    font-size: 1.1rem;
+    font-size: 1.04rem;
     color:#424242;
     font-family: MSSansSerif;
     /* margin-right: 50px; */
