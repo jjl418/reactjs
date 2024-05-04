@@ -25,4 +25,5 @@
     border: solid 5px;
     border-radius: 3%;
     border-color: rgb(255, 206, 229);
+    z-index: 5;
 }

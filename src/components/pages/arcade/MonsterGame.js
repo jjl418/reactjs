@@ -5,12 +5,12 @@ import React from 'react';
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 function MonsterGame() {
-  const { unityProvider } = useUnityContext({
-    loaderUrl: "../../../../build.loader.js",
-    dataUrl: "../../../../build.data",
-    frameworkUrl: "../../../../build.framework.js",
-    codeUrl: "../../../../build.wasm",
-    streamingAssetsUrl: "../../../../StreamingAssets",
+  const { unityProvider } = new useUnityContext({
+    loaderUrl: "/MonsterGameAssets/monster2.loader.js",
+    dataUrl: "/MonsterGameAssets/monster2.data",
+    frameworkUrl: "/MonsterGameAssets/monster2.framework.js",
+    codeUrl: "/MonsterGameAssets/monster2.wasm",
+    streamingAssetsUrl: "/MonsterGameAssets/StreamingAssets",
   });
   return (
     <>
